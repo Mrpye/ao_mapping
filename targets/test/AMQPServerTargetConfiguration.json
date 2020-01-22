@@ -1,0 +1,21 @@
+{
+    "b27f2175-4f5c-4e9a-a466-7b4f11a3c021":{
+       "id":"",
+       "name":"AMQP Broker Test AO",
+       "properties":{
+          "default_runtime_user_id":"$var_generic_id_f0a2698b-1feb-4e27-9fa9-b6150ec09288",
+          "description":"AMQP Endpoint: APIPort not mappable",
+          "display_name":"AMQP Broker Test AO",
+          "host":"192.168.9.87",
+          "ignore_certificate_errors":true,
+          "port":5671,
+          "ssl_enabled":true,
+          "vhost":"AMQP"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"b27f2175-4f5c-4e9a-a466-7b4f11a3c021",
+       "title":"AMQP Broker Test AO",
+       "type":"amqp.endpoint"
+    }
+ }

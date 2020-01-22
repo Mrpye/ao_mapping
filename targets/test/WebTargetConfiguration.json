@@ -1,0 +1,22 @@
+{
+    "e4648024-f17c-408e-87f9-0b0ae6909022": {
+        "id": "",
+        "name": "AO Web API",
+        "properties": {
+            "default_runtime_user_id": "01AB9PE142DP236rmWtdtU0CUvFGJWB4mcv",
+            "description": "AO Web API",
+            "disable_certificate_validation": true,
+            "display_name": "AO Web API",
+            "host": "172.21.8.72",
+            "no_runtime_user": true,
+            "path": "/be-console/api/v1/",
+            "port": 5143,
+            "protocol": "https"
+        },
+        "ref_type": "target",
+        "schema_id": "",
+        "tap_id": "e4648024-f17c-408e-87f9-0b0ae6909022",
+        "title": "AO Web API",
+        "type": "web-service.endpoint"
+    }
+}

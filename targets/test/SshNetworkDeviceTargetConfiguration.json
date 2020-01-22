@@ -1,0 +1,24 @@
+{
+    "53044503-1079-4117-a6af-3a0d1ff4af40":{
+       "id":"",
+       "name":"Ubuntu",
+       "properties":{
+          "default_runtime_user_id":"$var_generic_id_7b2d0edd-6bc4-4172-91b0-6e6934a88729",
+          "description":"Ubuntu",
+          "display_name":"Ubuntu",
+          "host":"192.168.9.152",
+          "no_runtime_user":false,
+          "port":22,
+          "prompt_pattern":"^{0}.*\\$",
+          "protocol":"ssh",
+          "succeeded_prompt_patterns":[
+             "sample 2"
+          ]
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"53044503-1079-4117-a6af-3a0d1ff4af40",
+       "title":"Ubuntu",
+       "type":"terminal.endpoint"
+    }
+ }

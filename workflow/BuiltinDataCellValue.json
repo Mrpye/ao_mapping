@@ -1,0 +1,25 @@
+{
+    "cases": [
+        {
+            "name": "properties",
+            "case": [
+                {
+                    "test": "['@Value.xsi:type.#'=='SubstitutableString']",
+                    "payload": {
+                        "key": "@ColumnName.#",
+                        "type": "[Util.get_datatype('@Value.xsi:type.#')]",
+                        "value": "@Value.#"
+                    }
+                },
+                {
+                    "test": "['@Value.xsi:type.#'=='SubstitutableNumber']",
+                    "payload": {
+                        "key": "@ColumnName.#",
+                        "type": "[Util.get_datatype('@Value.xsi:type.#')]",
+                        "value": "@Value.#{i}"
+                    }
+                }
+            ]
+        }
+    ]
+}

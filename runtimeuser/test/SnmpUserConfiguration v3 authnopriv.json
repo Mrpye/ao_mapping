@@ -1,0 +1,22 @@
+{
+   "8676a242-67b0-4e9f-9aef-a9f780568d88": {
+       "id": "",
+       "name": "New SNMP Credentials v3 authnopriv",
+       "properties": {
+           "description": "New SNMP Credentials v3 authnopriv",
+           "display_name": "New SNMP Credentials v3 authnopriv",
+           "security": {
+               "auth_key": "auth_key",
+               "auth_protocol": 2,
+               "security_level": "authNoPriv"
+           },
+           "username": "username",
+           "version": "3"
+       },
+       "ref_type": "target",
+       "schema_id": "",
+       "tap_id": "8676a242-67b0-4e9f-9aef-a9f780568d88",
+       "title": "New SNMP Credentials v3 authnopriv",
+       "type": "runtime_user.snmp_credentials"
+   }
+}

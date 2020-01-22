@@ -1,0 +1,16 @@
+# Account Key - Kafka Auth
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.kafka_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "kafka_key",
+		"description": "kafka key test",
+		"username": "admin",
+		"password": "password"
+    }
+}

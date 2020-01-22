@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<RuntimeUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SnmpManagerTargetConfiguration" xml:space="preserve">
+  <Id>b82a9cf7-f5f8-4222-92d9-e86a76b80762</Id>
+  <DisplayName>New SNMP Credentials v3 no auth</DisplayName>
+  <CreatedTime>2019-11-15T13:49:09.559217Z</CreatedTime>
+  <ModifiedTime>2019-11-15T13:49:09.559217Z</ModifiedTime>
+  <EncryptedPassword>
+    <EncryptedForm />
+  </EncryptedPassword>
+  <SnmpVersion>SNMPv3</SnmpVersion>
+  <SecurityLevel>noAuthNoPriv</SecurityLevel>
+  <AuthenticationProtocol>MD5</AuthenticationProtocol>
+  <PrivacyProtocol>DES</PrivacyProtocol>
+</RuntimeUserConfiguration>

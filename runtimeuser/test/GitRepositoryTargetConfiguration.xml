@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<RuntimeUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GitRepositoryTargetConfiguration" xml:space="preserve">
+  <Id>89fe47bc-d115-47cf-b523-62c61ebf5dc9</Id>
+  <DisplayName>AO_Target_Git</DisplayName>
+  <CreatedTime>2019-12-03T12:11:16.4400428Z</CreatedTime>
+  <ModifiedTime>2019-12-03T12:11:16.4400428Z</ModifiedTime>
+  <EncryptedPassword>
+    <EncryptedForm />
+  </EncryptedPassword>
+</RuntimeUserConfiguration>

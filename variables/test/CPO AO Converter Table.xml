@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<VariableConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:type="TableVariableConfiguration" xml:space="preserve">
+  <Id>95bf1ed4-c4da-4d05-bdcb-b822569628cc</Id>
+  <DisplayName>CPO AO Converter Bool Table</DisplayName>
+  <CreatedTime>2019-11-18T12:35:14.1491699Z</CreatedTime>
+  <ModifiedTime>2019-11-18T12:35:14.1491699Z</ModifiedTime>
+  <Owner xsi:type="SidIdentity">
+    <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-500</SecurityIdentifier>
+  </Owner>
+  <FixedSchemaDataTable>
+    <Row>
+      <Data>
+        <string>Andrew</string>
+        <int>22</int>
+        <string>Paul</string>
+        <boolean>true</boolean>
+        <UtcDateTime>2019-11-01T12:34:00Z</UtcDateTime>
+        <Null />
+        <EncryptedString>
+          <EncryptedForm>ut3u0xC4CvCpsGrLohDNieUvzU0wgLO3r7Lqu004ULg0QagPShLaNfIShrbwby6yFaEGb2cKcEGasNei3pfHtDbM4eCN7aNeUSaWMRAFfEhnxYnUNOMHJFScTiQo8zByc0QiZNxM9uIPxgwlqOqPEUTh/wWv7FfkRJDq+3hdturSaGWgfExDR5557SAcTnfTQCOC7JTkDURenvz7C36bqeifaV8dgQ==</EncryptedForm>
+        </EncryptedString>
+      </Data>
+    </Row>
+    <FixedSchema>
+      <Columns>
+        <TableSchemaColumn>
+          <Name>Name</Name>
+          <DataType>System.String</DataType>
+        </TableSchemaColumn>
+        <TableSchemaColumn>
+          <Name>age</Name>
+          <DataType>System.Int32</DataType>
+        </TableSchemaColumn>
+        <TableSchemaColumn>
+          <Name>Name2</Name>
+          <DataType>System.String</DataType>
+        </TableSchemaColumn>
+        <TableSchemaColumn>
+          <Name>active</Name>
+          <DataType>System.Boolean</DataType>
+        </TableSchemaColumn>
+        <TableSchemaColumn>
+          <Name>dob</Name>
+          <DataType>Tidal.Automation.Common.Product.UtcDateTime</DataType>
+        </TableSchemaColumn>
+        <TableSchemaColumn>
+          <Name>ident</Name>
+          <DataType>Tidal.Automation.DataAccessLayer.SidIdentity</DataType>
+        </TableSchemaColumn>
+        <TableSchemaColumn>
+          <Name>password</Name>
+          <DataType>Tidal.Automation.Common.Product.EncryptedString</DataType>
+        </TableSchemaColumn>
+      </Columns>
+    </FixedSchema>
+  </FixedSchemaDataTable>
+  <Scope>
+    <Family>Global</Family>
+    <ControllingItemId>00000000-0000-0000-0000-000000000000</ControllingItemId>
+  </Scope>
+  <VariableTypeId>27fc86d1-8ae5-d1a4-8d06-88ee0acd318a</VariableTypeId>
+  <CustomPropertiesString />
+</VariableConfiguration>

@@ -1,0 +1,15 @@
+{
+    "id":"",
+    "schema_id":"",
+    "tap_id":"@Id.#",
+    "type":"datatype.string",
+    "ref_type":"variable",
+    "title":"@DisplayName.#",
+    "properties":{
+       "scope":"[Util.get_scope('@Scope.Family.#')]",
+       "is_required":"[Util.bool_fix('@ValueRequired.#','false')]{b}",
+       "name":"@DisplayName.#",
+       "description":"[Util.trim('@Description.#')]",
+       "value":"@string.#"
+    }
+ }

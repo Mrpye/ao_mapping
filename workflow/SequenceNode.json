@@ -1,0 +1,29 @@
+{
+   "action": [
+      {
+         "previous_action": {
+            "id": "[Util.build_ref(Util.prev_tap_id,'id')]",
+            "tap_id": "[Util.prev_tap_id]",
+            "schema_id": "",
+            "type": "[Util.prev_type]",
+            "base_type":  "[Util.prev_base_type]"
+         },
+         "action": {
+            "id": "",
+            "schema_id": "",
+            "tap_id": "@Id.#",
+            "type": "logic.parallel_block",
+            "base_type": "activity",
+            "ref_type":"logic",
+            "name": "@DisplayName.#",
+            "properties": {
+               "continue_on_failure": false,
+               "skip_execution": false,
+               "display_name": "@DisplayName.#"
+            },
+            "block_num": "[Util.get_next_block_id()]{i}"
+         }
+      }
+   ],
+   "output": []
+}

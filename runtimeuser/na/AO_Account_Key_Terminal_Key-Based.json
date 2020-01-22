@@ -1,0 +1,18 @@
+# Account Key - Terminal Key-Based Creds
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.terminal_key_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "user",
+		"description": "terminal key test",
+		"user": "admin",
+		"key": "#####prv#####\ncfwef\nfefe\nfe\n######dwdw####",
+		"passphrase": "password",
+		"admin_password": "password"
+    }
+}

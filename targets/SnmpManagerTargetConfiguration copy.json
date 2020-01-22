@@ -1,0 +1,16 @@
+{
+  "name": "@DisplayName.#",
+  "title": "@DisplayName.#",
+  "type": "snmp.endpoint",
+  "tap_id": "@Id.#",
+  "id": "",
+  "ref_type": "target",
+  "schema_id": "",
+  "properties": {
+    "port": "@SnmpPort.#{i}",
+    "display_name": "@DisplayName.#",
+    "description": "@DisplayName.#",
+    "no_runtime_user": true
+    "host": "@SnmpHost.#"
+  }
+}

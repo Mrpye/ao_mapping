@@ -1,0 +1,42 @@
+{
+	"action": [
+		{
+			"previous_action": {
+				"id": "[Util.build_ref(Util.prev_tap_id)]",
+				"tap_id": "[Util.prev_tap_id]",
+				"schema_id": "",
+				"type": "[Util.prev_type]",
+				"base_type": "[Util.prev_base_type]"
+			},
+			"action": {
+				"id": "",
+				"tap_id": "@Id.#",
+				"ref_type": "action",
+				"schema_id": "",
+				"type": "psc.get_service_item",
+				"base_type": "activity",
+				"name": "@DisplayName.#",
+				"title": "@DisplayName.#",
+				"properties": {
+					"action_timeout": "[Util.fix_interval_sec('@Configuration.Timeout.Period.#','@Configuration.Timeout.DisplayUnits.#')]{i}",
+					"continue_on_failure": false,
+					"skip_execution": false,
+					"display_name": "@DisplayName.#",
+					"description": "@DisplayName.#",
+					"populate_columns": false,
+					"service_item_type": "@Configuration.ItemType.#",
+					"service_item_name": "@Configuration.ItemName.#",
+					"columns_to_read": "@Configuration.Properties.ServiceItemProperty.#{am}",
+					"runtime_user": {
+						"override_target_runtime_user": false,
+						"target_default": true
+					  },
+					  "target": {
+						"override_workflow_target": true,
+						"target_id": "[Util.build_ref('@Configuration.TargetLoadBalancer.HardcodedValue.Id.#@Configuration.TargetLoadBalancer.SingleTargetReference.HardcodedValue.Id.#')]"
+					  }
+				}
+			}
+		}
+	]
+}

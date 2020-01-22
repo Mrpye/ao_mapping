@@ -1,0 +1,31 @@
+{
+    "action": [
+      {
+         "previous_action":{
+            "id":"01BL3JXTM7OPZ5S3i9BKsv9B2CFvdRCdLUz",
+            "schema_id":"01BABPZAK4TUZ68sMqATvFp7o8U7146kpjB",
+            "type":"logic.for_each",
+            "base_type":"activity"
+         },
+         "action":{
+            "id":"01BABPZ4MPUPC6fdzSnYHzJnhs5xrf8qvqn",
+            "schema_id":"01BABPZ4MPUPC6fdzSnYHzJnhs5xrf8qvqn",
+            "type":"logic.break",
+            "base_type":"activity",
+            "name":"Break",
+            "properties":{
+               "continue_on_failure":false,
+               "skip_execution":false,
+               "display_name":"Break"
+            },
+            "block_num":0,
+            "title":"Break"
+         }
+      }
+    ],
+    "output": []
+ }
+
+
+
+

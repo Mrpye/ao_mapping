@@ -1,0 +1,15 @@
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.windows_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "@DisplayName.#",
+		"description": "@DisplayName.#",
+		"username": "admin",
+		"password": "password"
+    }
+}

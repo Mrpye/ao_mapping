@@ -1,0 +1,17 @@
+{
+    "89fe47bc-d115-47cf-b523-62c61ebf5dc9":{
+       "id":"",
+       "name":"AO_Target_Git",
+       "properties":{
+          "description":"AO_Target_Git",
+          "display_name":"AO_Target_Git",
+          "password":"password",
+          "username":"admin"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"89fe47bc-d115-47cf-b523-62c61ebf5dc9",
+       "title":"AO_Target_Git",
+       "type":"runtime_user.git_password_credentials"
+    }
+ }

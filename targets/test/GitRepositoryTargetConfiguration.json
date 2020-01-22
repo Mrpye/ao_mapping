@@ -1,0 +1,23 @@
+{
+    "3a27785f-40b5-4ccd-b3f1-f636f85a1987":{
+       "id":"",
+       "name":"AO_Target_Git",
+       "properties":{
+          "branch":"master",
+          "codepath":"/codepath/",
+          "default_runtime_user_id":"$var_generic_id_89fe47bc-d115-47cf-b523-62c61ebf5dc9",
+          "description":"AO_Target_Git",
+          "display_name":"AO_Target_Git",
+          "no_runtime_user":false,
+          "protocol":"https",
+          "repo":"github.contoso.com/api/v3/repos/me/myrepo.git",
+          "repo_type":"github",
+          "repo_version":"1"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"3a27785f-40b5-4ccd-b3f1-f636f85a1987",
+       "title":"AO_Target_Git",
+       "type":"git.endpoint"
+    }
+ }

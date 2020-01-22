@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<TargetConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="UnixTargetConfiguration" xml:space="preserve">
+  <Id>c8213f1c-444f-4394-86ce-cf2729b5a7ac</Id>
+  <DisplayName>AO_Target_terminal</DisplayName>
+  <CreatedTime>2019-12-03T11:17:38.2857485Z</CreatedTime>
+  <ModifiedTime>2019-12-03T11:17:38.2857485Z</ModifiedTime>
+  <Owner xsi:type="SidIdentity">
+    <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+  </Owner>
+  <DefaultRuntimeUserId>a1fa7ac7-a0e2-411a-9963-84c8230cc1c9</DefaultRuntimeUserId>
+  <TypeExtensionId>5598e74f-68e3-ec60-82a4-7d91b7824389</TypeExtensionId>
+  <OsName />
+  <OsVersion />
+  <NodeName />
+  <EnableCodeInjectionPrevention>true</EnableCodeInjectionPrevention>
+  <SshHost>192.168.9.1</SshHost>
+  <SshPort>22</SshPort>
+  <Protocol>SSH</Protocol>
+  <SftpEnabled>false</SftpEnabled>
+  <ScpEnabled>false</ScpEnabled>
+  <UseHostBasedAuthentication>false</UseHostBasedAuthentication>
+  <UseDefaultHostKey>true</UseDefaultHostKey>
+  <PromptPrefix>sample prompt</PromptPrefix>
+  <DeviceType>UNIX</DeviceType>
+  <SessionResourceId>3fa29e5c-ca35-46d4-bc7f-e85d6ef60d22</SessionResourceId>
+  <SessionResource xml:space="preserve">
+    <Id>3fa29e5c-ca35-46d4-bc7f-e85d6ef60d22</Id>
+    <DisplayName>Unix/Linux System Session Resource</DisplayName>
+    <CreatedTime>2019-12-03T11:17:38.3169763Z</CreatedTime>
+    <CreatedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+    </CreatedBy>
+    <ModifiedTime>2019-12-03T11:17:38.3169763Z</ModifiedTime>
+    <ModifiedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+    </ModifiedBy>
+    <Owner xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+    </Owner>
+  </SessionResource>
+  <SessionConstraint xml:space="preserve">
+    <Id>2251a011-42e6-4a4c-a16a-67af14ce28eb</Id>
+    <DisplayName>Unix/Linux System Session Resource Constraint</DisplayName>
+    <CreatedTime>2019-12-03T11:17:38.3407796Z</CreatedTime>
+    <CreatedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+    </CreatedBy>
+    <ModifiedTime>2019-12-03T11:17:38.3407796Z</ModifiedTime>
+    <ModifiedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+    </ModifiedBy>
+    <Owner xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+    </Owner>
+    <ResourceId>3fa29e5c-ca35-46d4-bc7f-e85d6ef60d22</ResourceId>
+    <Scope>
+      <Family>Target</Family>
+      <ControllingItemId>c8213f1c-444f-4394-86ce-cf2729b5a7ac</ControllingItemId>
+    </Scope>
+    <Quantity>3</Quantity>
+  </SessionConstraint>
+  <MaxIdleTimePeriod>
+    <DisplayUnits>Minutes</DisplayUnits>
+    <Period>
+      <HardcodedValue>5</HardcodedValue>
+    </Period>
+  </MaxIdleTimePeriod>
+  <ConnectionTimeOut>108</ConnectionTimeOut>
+  <LoginExpectList />
+  <ElevatingPrivilegeExpectList />
+  <DeviceTypeConfigurationId>4ba4d91b-91f8-409c-bf09-2b84f19575fe</DeviceTypeConfigurationId>
+  <PromptExpectPattern>
+    <FormattedCode>^{0}.*\$</FormattedCode>
+    <References>
+      <VariableReference xsi:type="PropertyReference">
+        <DisplayPath>Target.Prompt Prefix</DisplayPath>
+        <LinkChain>
+          <Link xsi:type="PropertyNameLink">
+            <PropertyName>PromptPrefix</PropertyName>
+          </Link>
+        </LinkChain>
+        <ObjectType>Target</ObjectType>
+      </VariableReference>
+    </References>
+  </PromptExpectPattern>
+  <ErrorExpectPattern>
+    <HardcodedValue />
+  </ErrorExpectPattern>
+  <AdminPromptExpectPattern>
+    <FormattedCode>^{0}.*#</FormattedCode>
+    <References>
+      <VariableReference xsi:type="PropertyReference">
+        <DisplayPath>Target.Prompt Prefix</DisplayPath>
+        <LinkChain>
+          <Link xsi:type="PropertyNameLink">
+            <PropertyName>PromptPrefix</PropertyName>
+          </Link>
+        </LinkChain>
+        <ObjectType>Target</ObjectType>
+      </VariableReference>
+    </References>
+  </AdminPromptExpectPattern>
+</TargetConfiguration>

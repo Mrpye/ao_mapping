@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<TargetConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:type="AMQPServerTargetConfiguration" xml:space="preserve">
+  <Id>b27f2175-4f5c-4e9a-a466-7b4f11a3c021</Id>
+  <DisplayName>AMQP Broker Test AO</DisplayName>
+  <CreatedTime>2019-11-27T14:19:57.1032434Z</CreatedTime>
+  <ModifiedTime>2019-11-27T14:19:57.1032434Z</ModifiedTime>
+  <Owner xsi:type="SidIdentity">
+    <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-500</SecurityIdentifier>
+  </Owner>
+  <DefaultRuntimeUserId>f0a2698b-1feb-4e27-9fa9-b6150ec09288</DefaultRuntimeUserId>
+  <TypeExtensionId>556782be-bab6-9f13-820c-f3c3ad45de94</TypeExtensionId>
+  <Host>192.168.9.87</Host>
+  <Port>5671</Port>
+  <APIPort>15672</APIPort>
+  <BaseURL>https://192.168.9.87:15672/api/</BaseURL>
+  <Vhost>AMQP</Vhost>
+  <IgnoreCertificateErrors>true</IgnoreCertificateErrors>
+  <UseSSL>true</UseSSL>
+</TargetConfiguration>

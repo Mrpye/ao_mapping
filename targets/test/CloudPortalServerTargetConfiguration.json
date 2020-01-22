@@ -1,0 +1,19 @@
+{
+    "2887f5d7-adb4-4fdc-ad9e-5f65ba6d9d69":{
+       "id":"",
+       "name":"Cisco Prime Service Catalog Server",
+       "properties":{
+          "default_runtime_user_id":"$var_generic_id_c1f6af46-08da-49b6-9953-25f148355c5c",
+          "description":"Cisco Prime Service Catalog Server",
+          "display_name":"Cisco Prime Service Catalog Server",
+          "host":"192.168.9.202",
+          "port":8080,
+          "protocol":"https"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"2887f5d7-adb4-4fdc-ad9e-5f65ba6d9d69",
+       "title":"Cisco Prime Service Catalog Server",
+       "type":"psc.endpoint"
+    }
+ }

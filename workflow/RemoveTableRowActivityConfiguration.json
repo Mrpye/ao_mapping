@@ -1,0 +1,55 @@
+{
+	"action": [
+		{
+			"cases": [
+				{
+					"name": "rows",
+					"case": [
+						{
+							"test": "['@Configuration.RowSelectionMode.#'=='AllRows']",
+							"payload": {
+                "all_rows": true,
+                "rows_matching_criteria": false
+							}
+						},
+						{
+							"test": "['@Configuration.RowSelectionMode.#'!='AllRows']",
+							"payload": {
+								"rows_matching_criteria": true,
+                "where_clause": "@WhereClause.#"
+							}
+						}
+					]
+				}
+			],
+			"payload": {
+        "previous_action": {
+          "id": "[Util.build_ref(Util.prev_tap_id)]",
+          "tap_id": "[Util.prev_tap_id]",
+          "schema_id": "",
+          "type": "[Util.prev_type]",
+          "base_type": "[Util.prev_base_type]"
+        },
+        "action": {
+          "id": "",
+          "tap_id": "@Id.#",
+          "ref_type": "action",
+          "schema_id": "",
+          "type": "core.deleterowfromtable",
+          "base_type": "activity",
+          "name": "@DisplayName.#",
+          "title": "@DisplayName.#",
+          "properties": {
+            "action_timeout": 180,
+            "continue_on_failure": false,
+            "display_name": "@DisplayName.#",
+            "rows": "%rows%",
+            "skip_execution": false,
+            "description": "@DisplayName.#",
+            "input_table": "[Util.build_ref('@Configuration.TableVariable.ObjectId.#','varref')]"
+          }
+        }
+      }
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+    "433f95cb-8fa3-40cb-ae00-796339e54166": {
+        "id": "",
+        "properties": {
+            "description": "",
+            "is_required": false,
+            "name": "CPO AO Converter String",
+            "scope": "global",
+            "value": "Test String"
+        },
+        "ref_type": "variable",
+        "schema_id": "",
+        "tap_id": "433f95cb-8fa3-40cb-ae00-796339e54166",
+        "title": "CPO AO Converter String",
+        "type": "datatype.string"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "95bf1ed4-c4da-4d05-bdcb-b822569628cc":{
+       "id":"",
+       "properties":{
+          "description":"CPO AO Converter Bool Table",
+          "name":"CPO AO Converter Bool Table",
+          "scope":"global",
+          "value":[
+             {
+                "column_data":{
+                   "Name":"Andrew",
+                   "Name2":"Paul",
+                   "active":true,
+                   "age":22,
+                   "dob":"2019-11-01T12:34:00Z",
+                   "ident":0,
+                   "password":"ut3u0xC4CvCpsGrLohDNieUvzU0wgLO3r7Lqu004ULg0QagPShLaNfIShrbwby6yFaEGb2cKcEGasNei3pfHtDbM4eCN7aNeUSaWMRAFfEhnxYnUNOMHJFScTiQo8zByc0QiZNxM9uIPxgwlqOqPEUTh/wWv7FfkRJDq+3hdturSaGWgfExDR5557SAcTnfTQCOC7JTkDURenvz7C36bqeifaV8dgQ=="
+                }
+             }
+          ]
+       },
+       "ref_type":"data_table",
+       "schema_id":"",
+       "tap_id":"95bf1ed4-c4da-4d05-bdcb-b822569628cc",
+       "title":"CPO AO Converter Bool Table"
+    }
+ }

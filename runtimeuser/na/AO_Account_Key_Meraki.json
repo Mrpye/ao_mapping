@@ -1,0 +1,15 @@
+# Account Key - Meraki Creds
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.meraki_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "meraki_key",
+		"description": "meraki key test",
+		"api_key": "apipassword"
+    }
+}

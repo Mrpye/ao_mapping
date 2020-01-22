@@ -1,0 +1,5 @@
+{
+    "attribute_operator": "[Util.lookup_comp2('@Comparison.#')]",
+    "attribute_name": "@Name.#",
+    "attribute_value": "@Value.#"
+  }

@@ -1,0 +1,33 @@
+{
+  "action": [
+    {
+      "previous_action": {
+        "id": "[Util.build_ref(Util.prev_tap_id)]",
+        "tap_id": "[Util.prev_tap_id]",
+        "schema_id": "",
+        "type": "[Util.prev_type]",
+        "base_type": "[Util.prev_base_type]"
+      },
+      "action": {
+        "id": "",
+        "tap_id": "@Id.#",
+        "ref_type": "action",
+        "schema_id": "",
+        "type": "python3.script",
+        "base_type": "activity",
+        "name": "@DisplayName.#",
+        "title": "@DisplayName.#",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "skip_execution": false,
+          "display_name": "@Configuration.ScriptName.#",
+          "description": "@DisplayName.#",
+          "script_arguments": "@Configuration.ScriptName.#{a}",
+          "script": "@Configuration.Script.#",
+          "script_queries": []
+        }
+      }
+    }
+  ]
+}

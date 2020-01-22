@@ -1,0 +1,29 @@
+{
+   "action": [
+      {
+         "previous_action": {
+            "id": "[Util.build_ref(Util.prev_tap_id,'id')]",
+            "tap_id": "[Util.prev_tap_id]",
+            "schema_id": "",
+            "type": "[Util.prev_type]",
+            "base_type":  "[Util.prev_base_type]"
+         },
+         "action": {
+            "id": "",
+            "tap_id": "@Id.#",
+            "schema_id": "",
+            "type": "logic.if_else",
+            "ref_type":"logic",
+            "base_type": "activity",
+            "name": "@DisplayName.#",
+            "properties": {
+               "continue_on_failure": false,
+               "skip_execution": false,
+               "display_name": "@DisplayName.#"
+            },
+            "title": "@DisplayName.#"
+         }
+      }
+   ],
+   "output": []
+}

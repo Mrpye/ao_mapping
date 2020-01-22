@@ -1,0 +1,34 @@
+{
+  "action": [
+    {
+      "previous_action": {
+        "id": "[Util.build_ref(Util.prev_tap_id)]",
+        "tap_id": "[Util.prev_tap_id]",
+        "schema_id": "",
+        "type": "[Util.prev_type]",
+        "base_type": "[Util.prev_base_type]"
+      },
+      "action": {
+        "id": "",
+        "tap_id": "@Id.#",
+        "ref_type": "action",
+        "schema_id": "",
+        "type": "task.update_task",
+        "base_type": "activity",
+        "name": "@DisplayName.#",
+        "title": "@DisplayName.#",
+        "properties": {
+          "continue_on_failure": false,
+          "skip_execution": false,
+          "description":"@DisplayName.#",
+          "display_name": "@DisplayName.#",
+          "run_as": "admin|@metsi.co.uk",
+          "task_type": "task.approval",
+          "task_id":  "@Configuration.TaskId.#",
+          "task_properties":  "@Configuration.ModificationGroup.Modifications.PropertyModification.#{am}"
+        }
+        
+      }
+    }
+  ]
+}

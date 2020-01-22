@@ -1,0 +1,25 @@
+{
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "git.endpoint",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+	"schema_id": "",
+	"properties": {
+		"branch": "@Branch.#",
+		"no_runtime_user": "[not Util.exists('@DefaultRuntimeUserId.#')]{b}",
+		"repo_type": "github",
+		"repo_version": "1",
+		"display_name": "@DisplayName.#",
+		"description": "@DisplayName.#",
+		"protocol": "[Util.get_scheme('@BaseUrl.#')]",
+		"repo": "[Util.get_host('@BaseUrl.#')][Util.get_path('@BaseUrl.#')]",
+		"default_runtime_user_id":  "[Util.build_ref('@DefaultRuntimeUserId.#')]{!}",
+		"codepath": "@CodePath.#",
+		"proxy_url": "{!}",
+		"proxy_username": "{!}",
+		"proxy_password": "{!}",
+		"proxy_bypass_list": "{!}"
+	}
+}

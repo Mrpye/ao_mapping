@@ -1,0 +1,18 @@
+{
+    "2bdbcf36-4595-4f9e-b865-eeab3752038f": {
+        "id": "",
+        "name": "AO_Target_PSC",
+        "properties": {
+            "description": "AO_Target_PSC",
+            "display_name": "AO_Target_PSC",
+            "password": "password",
+            "tenant_id": "cisco",
+            "username": "admin"
+        },
+        "ref_type": "target",
+        "schema_id": "",
+        "tap_id": "2bdbcf36-4595-4f9e-b865-eeab3752038f",
+        "title": "AO_Target_PSC",
+        "type": "runtime_user.ccs_explicit_user"
+    }
+}

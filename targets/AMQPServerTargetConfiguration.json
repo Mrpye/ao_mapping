@@ -1,0 +1,19 @@
+{
+    "name":"@DisplayName.#",
+    "title":"@DisplayName.#",
+    "type":"amqp.endpoint",
+    "tap_id":"@Id.#",
+    "id":"",
+    "ref_type":"target",
+    "schema_id":"",
+    "properties": {
+		"ignore_certificate_errors": "@IgnoreCertificateErrors.#{b}",
+		"port": "@Port.#{i}",
+		"ssl_enabled": "@UseSSL.#{b}",
+		"vhost": "@Vhost.#",
+		"display_name": "@DisplayName.#",
+		"description": "AMQP Endpoint: APIPort not mappable",
+		"host": "@Host.#",
+		"default_runtime_user_id": "[Util.build_ref('@DefaultRuntimeUserId.#')]{!}"
+    }
+}

@@ -1,0 +1,10 @@
+
+{
+    "_page":1,
+    "maximum":0,
+    "minimum":0,
+    "type":"[Util.get_datatype('@DataType.#')]",
+    "name":"@Name.#",
+    "title":"@Name.#"
+}
+   

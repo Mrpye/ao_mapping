@@ -1,0 +1,43 @@
+{
+	"action": [
+		{
+			"previous_action": {
+				"id": "[Util.build_ref(Util.prev_tap_id)]",
+				"tap_id": "[Util.prev_tap_id]",
+				"schema_id": "",
+				"type": "[Util.prev_type]",
+				"base_type": "[Util.prev_base_type]"
+			},
+			"action": {
+				"id": "",
+				"tap_id": "@Id.#",
+				"ref_type": "action",
+				"schema_id": "",
+				"type": "amqp.declare_queue",
+				"base_type": "activity",
+				"name": "@DisplayName.#",
+				"title": "@DisplayName.#",
+				"properties": {
+					"action_timeout": 180,
+					"skip_execution": false,
+					"continue_on_failure": false,
+					"display_name": "@DisplayName.#",
+					"description": "@DisplayName.#",
+					"durable": "@Configuration.Durable.#{b}",
+					"type": "@Configuration.ExchangeType.#",
+					"name": "@Configuration.QueueName.#",
+					"auto_delete": "@Configuration.AutoDelete.#{b}",
+					"arguments":"@Configuration.Arguments.AMQPArgumentConfiguration.#{am}",
+					"runtime_user": {
+						"override_target_runtime_user": false,
+						"target_default": true
+					},
+					"target": {
+						"override_workflow_target": true,
+						"target_id": "[Util.build_ref('@Configuration.TargetLoadBalancer.HardcodedValue.Id.#@Configuration.TargetLoadBalancer.SingleTargetReference.HardcodedValue.Id.#')]"
+					}
+				}
+			}
+		}
+	]
+}

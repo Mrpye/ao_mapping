@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<RuntimeUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="WindowsTargetConfiguration" xml:space="preserve">
+  <Id>3dca7a2e-ba42-461b-a135-d27e7d1c4fda</Id>
+  <DisplayName>metsilabs.local\brettp</DisplayName>
+  <CreatedTime>2019-12-03T12:05:25.9896011Z</CreatedTime>
+  <ModifiedTime>2019-12-03T12:05:25.9896011Z</ModifiedTime>
+  <EncryptedPassword>
+    <EncryptedForm />
+  </EncryptedPassword>
+</RuntimeUserConfiguration>

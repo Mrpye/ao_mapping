@@ -1,0 +1,5 @@
+{
+    "variable_type": "[Util.get_oid('@ValueType.#')]",
+    "oid": "@ObjectIdentifier.#",
+    "variable_value": "@Value.#"
+}

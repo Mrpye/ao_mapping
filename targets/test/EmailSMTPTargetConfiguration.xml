@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<TargetConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="EmailSMTPTargetConfiguration" xml:space="preserve">
+  <Id>6e98be87-428e-4130-a1e9-13d95e732032</Id>
+  <DisplayName>AO_Target_SMTP</DisplayName>
+  <CreatedTime>2019-12-03T11:25:02.5355097Z</CreatedTime>
+  <ModifiedTime>2019-12-03T11:25:02.5355097Z</ModifiedTime>
+  <Owner xsi:type="SidIdentity">
+    <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+  </Owner>
+  <DefaultRuntimeUserId>bb780c73-ddd1-40de-907a-86e7584fa118</DefaultRuntimeUserId>
+  <TypeExtensionId>ab940f94-d1be-c999-10ff-881ad9a63ffa</TypeExtensionId>
+  <SmtpServer>192.168.9.1</SmtpServer>
+  <Sender>sender@metsi.co.uk</Sender>
+</TargetConfiguration>

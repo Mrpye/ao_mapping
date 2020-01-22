@@ -1,0 +1,14 @@
+{ 
+    "2cc638a8-d56b-4f82-8276-769062757e1e":{ 
+       "category_type":"custom",
+       "description":"CPO AO Converter",
+       "name":"CPO AO Converter",
+       "schema_id":"",
+       "title":"CPO AO Converter",
+       "tap_id":"2cc638a8-d56b-4f82-8276-769062757e1e",
+       "ref_type":"category",
+       "id":"",
+       "type":"basic.category",
+       "base_type":"category"
+    }
+ }

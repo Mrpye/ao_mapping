@@ -1,0 +1,66 @@
+{
+   "95bf1ed4-c4da-4d05-bdcb-b822569628cc": {
+       "columns": [
+           {
+               "_page": 1,
+               "maximum": 0,
+               "minimum": 0,
+               "name": "Name",
+               "title": "Name",
+               "type": "string"
+           },
+           {
+               "_page": 1,
+               "maximum": 0,
+               "minimum": 0,
+               "name": "age",
+               "title": "age",
+               "type": "number"
+           },
+           {
+               "_page": 1,
+               "maximum": 0,
+               "minimum": 0,
+               "name": "Name2",
+               "title": "Name2",
+               "type": "string"
+           },
+           {
+               "_page": 1,
+               "maximum": 0,
+               "minimum": 0,
+               "name": "active",
+               "title": "active",
+               "type": "boolean"
+           },
+           {
+               "_page": 1,
+               "maximum": 0,
+               "minimum": 0,
+               "name": "dob",
+               "title": "dob",
+               "type": "date"
+           },
+           {
+               "_page": 1,
+               "maximum": 0,
+               "minimum": 0,
+               "name": "ident",
+               "title": "ident",
+               "type": "number"
+           },
+           {
+               "_page": 1,
+               "maximum": 0,
+               "minimum": 0,
+               "name": "password",
+               "title": "password",
+               "type": "string"
+           }
+       ],
+       "description": "CPO AO Converter Bool Table",
+       "display_name": "CPO AO Converter Bool Table",
+       "id": "",
+       "tap_id": "95bf1ed4-c4da-4d05-bdcb-b822569628cc"
+   }
+}

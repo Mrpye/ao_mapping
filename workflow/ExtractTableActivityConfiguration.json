@@ -1,0 +1,43 @@
+{
+	"action": [
+		{
+			"previous_action": {
+				"id": "[Util.build_ref(Util.prev_tap_id)]",
+				"tap_id": "[Util.prev_tap_id]",
+				"schema_id": "",
+				"type": "[Util.prev_type]",
+				"base_type": "[Util.prev_base_type]"
+			},
+			"action": {
+				"id": "",
+				"tap_id": "@Id.#",
+				"ref_type": "action",
+				"schema_id": "",
+				"type": "core.selectfromtable",
+				"base_type": "activity",
+				"name": "@DisplayName.#",
+				"title": "@DisplayName.#",
+				"properties": {
+					"action_timeout": 180,
+					"continue_on_failure": false,
+					"persist_output": "['true' if '@Configuration.xml:space.#' =='preserve' else 'false']{b}",
+					"skip_execution": false,
+					"display_name": "@DisplayName.#",
+					"description": "@DisplayName.#",
+					"number_of_rows": {
+						"at_most": true,
+						"first_n_rows": "@Configuration.MaxRows.#{i}"
+					},
+					"sorting": {
+						"sort_by": true,
+						"column_name": "@Configuration.SortColumn.#",
+						"order": "['desc' if '@Configuration.SortOrder.#' =='Descending' else 'asc']"
+					},
+					"input_table": "[Util.build_ref('@Configuration.SourceTable.ObjectId.#','varref')]",
+					"columns": "@Configuration.Values.BuiltinDataCellValue.#{am'BuiltinDataCell'}",
+					"where_clause": "@Configuration.WhereClause.#"
+				}
+			}
+		}
+	]
+}

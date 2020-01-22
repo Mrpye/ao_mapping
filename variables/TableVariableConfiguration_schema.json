@@ -1,0 +1,8 @@
+{
+    
+    "id": "",
+    "tap_id":"@Id.#",
+    "columns":"@FixedSchemaDataTable.FixedSchema.Columns.TableSchemaColumn.#{am}",
+    "display_name":"@DisplayName.#",
+    "description":"@DisplayName.#"
+ }

@@ -1,0 +1,5 @@
+{ 
+    "jsonpath_query_type":"[Util.lcase('@ReturnType.#')]",
+    "jsonpath_query":"@Query.#",
+    "jsonpath_query_name":"@DisplayName.#"
+ }

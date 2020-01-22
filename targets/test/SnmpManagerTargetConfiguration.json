@@ -1,0 +1,19 @@
+{
+    "c2c61ee8-3c2a-4bcd-820d-591a73019614":{
+       "id":"",
+       "name":"SNMP Server (Manager)",
+       "properties":{
+          "default_runtime_user_id":"$var_generic_id_9464c8f9-6c75-4231-a9ee-72f3cbd72624",
+          "description":"SNMP Server (Manager)",
+          "display_name":"SNMP Server (Manager)",
+          "host":"192.168.0.1",
+          "no_runtime_user":false,
+          "port":162
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"c2c61ee8-3c2a-4bcd-820d-591a73019614",
+       "title":"SNMP Server (Manager)",
+       "type":"snmp.endpoint"
+    }
+ }

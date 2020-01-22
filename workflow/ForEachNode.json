@@ -1,0 +1,32 @@
+{
+   "action":[
+      {
+         "previous_action":{
+            "id":"[Util.build_ref(Util.prev_tap_id,'id')]",
+            "tap_id":"[Util.prev_tap_id]",
+            "schema_id":"",
+            "type":"[Util.prev_type]",
+            "base_type":"[Util.prev_base_type]"
+         },
+         "action":{
+            "id":"",
+            "schema_id":"",
+            "tap_id":"@Id.#",
+            "type":"logic.for_each",
+            "base_type":"activity",
+            "ref_type":"logic",
+            "name":"@DisplayName.#",
+            "properties":{
+               "continue_on_failure":false,
+               "skip_execution":false,
+               "display_name":"@DisplayName.#",
+               "source_array":"@ForEachSource.#"
+            },
+            "title":"@DisplayName.#"
+         }
+      }
+   ],
+   "output":[
+
+   ]
+}

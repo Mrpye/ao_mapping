@@ -1,0 +1,7 @@
+{
+    "linkchain": "@LinkChain.Link.#{am}",
+    "DisplayPath": "@DisplayPath.#",
+    "ref_type":"VariableReference",
+    "ObjectType": "@ObjectType.#",
+    "ObjectId": "[Util.build_ref('@ObjectId.#','varref')]"
+}

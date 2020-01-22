@@ -1,0 +1,33 @@
+{
+	"action": [
+		{
+			"previous_action": {
+				"id": "[Util.build_ref(Util.prev_tap_id)]",
+				"tap_id": "[Util.prev_tap_id]",
+				"schema_id": "",
+				"type": "[Util.prev_type]",
+				"base_type": "[Util.prev_base_type]"
+			},
+			"action": {
+				"id": "",
+				"tap_id": "@Id.#",
+				"ref_type": "action",
+				"schema_id": "",
+				"type": "core.addrowtotable",
+				"base_type": "activity",
+				"name": "@DisplayName.#",
+				"title": "@DisplayName.#",
+				"properties": {
+					"action_timeout": 180,
+					"continue_on_failure": false,
+					"description": "@DisplayName.#",
+					"display_name": "@DisplayName.#",
+					"input_table": "[Util.build_ref('@Configuration.TableVariable.ObjectId.#','varref')]",
+					"skip_execution": false,
+					"row":"@Configuration.Values.BuiltinDataCellValue.#{am}"
+				}
+        
+			}
+		}
+	]
+}

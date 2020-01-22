@@ -1,0 +1,5 @@
+{
+    "source_column_type": "[Util.get_datatype('@DataType.#')]",
+    "source_column": "@DisplayName.#",
+    "target_column": "@TargetName.#"
+  }

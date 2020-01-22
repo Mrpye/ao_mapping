@@ -1,0 +1,16 @@
+# Account Key -JDBC Login Creds
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.database_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "jdbc_login_key",
+		"description": "jdbc login key test",
+		"username": "admin",
+		"password": "password"
+    }
+}

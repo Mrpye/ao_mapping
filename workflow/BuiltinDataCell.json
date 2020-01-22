@@ -1,0 +1,4 @@
+{
+    "column_name":"@ColumnName.#",
+    "column_type": "[Util.get_datatype('@Value.xsi:type.#')]"
+  }

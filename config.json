@@ -1,0 +1,144 @@
+{
+    "to_array": [
+        {
+            "node_name": "ConditionDefinition",
+            "map": "Conditions"
+        },
+        {
+            "node_name": "VariableConfiguration",
+            "map": "VariableDefinitions"
+        },
+        {
+            "node_name": "Row",
+            "map": "FixedSchemaDataTable"
+        },
+        {
+            "node_name": "TableSchemaColumn",
+            "map": "Columns"
+        },
+        {
+            "node_name": "VariableReference",
+            "map": "References"
+        },
+        {
+            "node_name": "Header",
+            "map": "Headers"
+        },
+        {
+            "node_name": "JsonPathQueryDefinition",
+            "map": "Queries"
+        },
+        {
+            "node_name": "Link",
+            "map": "LinkChain"
+        },
+        {
+            "node_name": "PropertyReferenceValuePair",
+            "map": "Assignments"
+        },
+        {
+            "node_name": "SubstitutableRepaceItem",
+            "map": "ReplaceList"
+        },
+        {
+            "node_name": "XPathQueryDefinition",
+            "map": "Queries"
+        },
+        {
+            "node_name": "XPathNamespaceDefinition",
+            "map": "Namespaces"
+        },
+        {
+            "node_name": "BuiltinDataCellValue",
+            "map": "Values"
+        },
+        {
+            "node_name": "BuiltinTableColumn",
+            "map": "Columns"
+        },
+        {
+            "node_name": "InputVariableAssignment",
+            "map": "VariableAssignmentsAsArray"
+        },
+        {
+            "node_name": "SubstitutableObject",
+            "map": "Arguments"
+        },
+        {
+            "node_name": "ServiceItemProperty",
+            "map": "Properties"
+        },
+        {
+            "node_name": "ServiceItemSearchCriteria",
+            "map": "SearchCriteria"
+        },
+        {
+            "node_name": "SubstitutableString",
+            "map": "ScriptArguments"
+        },
+        {
+            "node_name": "StoredProcedureParameterConfiguration",
+            "map": "Parameters"
+        },
+        {
+            "node_name": "DataMapRelation",
+            "map": "Columns"
+        },
+        {
+            "node_name": "ExpectElementConfiguration",
+            "map": "ExpectList"
+        },
+        {
+            "node_name": "GenericCriteria",
+            "map": "OriginalTaskMatchingCriteria"
+        },
+        {
+            "node_name": "GenericCriteria",
+            "map": "MatchingCriteria"
+        },
+        {
+            "node_name": "EmailCriteriaColumnData",
+            "map": "Conditions"
+        },
+        {
+            "node_name": "InputVariableAssignment",
+            "map": "VariableAssignmentsAsArray"
+        },
+        {
+            "node_name": "ConditionDefinition",
+            "map": "TargetCriteria"
+        },
+        {
+            "node_name": "SubstitutableString",
+            "map": "Files"
+        },
+        {
+            "node_name": "AMQPArgumentConfiguration",
+            "map": "Arguments"
+        },
+        {
+            "node_name": "AMQPContentHeaderConfigurationOfAMQPContentHeader",
+            "map": "ContentHeaders"
+        },
+        {
+            "node_name": "SnmpData",
+            "map": "VariablesBinding"
+        },
+        {
+            "node_name": "SubstitutableString",
+            "map": "SubstitutableApprovalChoices"
+        },
+        {
+            "node_name": "PropertyModification",
+            "map": "Modifications"
+        }
+    ],
+    "process_lookup": {
+        "61c01a32-66e3-4315-91c3-57b433379bac": "ActivityMicrosoftStopProcess",
+        "8f001469-ca06-49a0-9e4c-fa38b71b44d6": "ActivityMicrosoftRestartServer",
+        "a0324bf3-06d0-4651-b0b9-bfd7cbfcf340": "ActivityMicrosoftWinCopyFolder",
+        "af281d69-6fb4-4b54-9e9f-440eb7c85d3f": "ActivityMicrosoftWinCreateFolder",
+        "89810895-8fd2-4476-9223-32cc3d0ea192": "ActivityMicrosoftWinGetFolderProperties",
+        "877cdf40-12ab-40a1-839f-5da31ad43d51": "ActivityMicrosoftUninstallApp"
+    }
+}

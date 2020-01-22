@@ -1,0 +1,19 @@
+# Account Key - HTTP Signature Auth
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.web-service_signature_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"algorithm": "rsa-sha256",
+		"display_name": "http_sign_key",
+		"description": "http signature key test",
+		"key_id": "123456",
+		"priv_key": "####scs###c#\nefe\nfe\nf\ne\n######ddedw###",
+		"priv_passphrase": "password",
+		"headers": "http://sign.com/test"
+    }
+}

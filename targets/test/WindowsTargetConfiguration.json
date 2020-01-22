@@ -1,0 +1,20 @@
+{
+    "5391d12f-9efe-48ad-9aaf-acf7ce86793c":{
+       "id":"",
+       "name":"AO_Target_Microsoft_Windows_Endpoint",
+       "properties":{
+          "default_runtime_user_id":"$var_generic_id_3dca7a2e-ba42-461b-a135-d27e7d1c4fda",
+          "description":"AO_Target_Microsoft_Windows_Endpoint",
+          "display_name":"AO_Target_Microsoft_Windows_Endpoint",
+          "host":"192.168.9.57",
+          "no_runtime_user":false,
+          "port":5985,
+          "protocol":"http"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"5391d12f-9efe-48ad-9aaf-acf7ce86793c",
+       "title":"AO_Target_Microsoft_Windows_Endpoint",
+       "type":"windows.endpoint"
+    }
+ }

@@ -1,0 +1,10 @@
+{ 
+   "category_type":"custom",
+   "description":"@desc",
+   "name":"@name",
+   "schema_id":"",
+   "title":"@name",
+   "tap_id":"@tap_id",
+   "type":"basic.category",
+   "base_type": "category"
+}

@@ -1,0 +1,4 @@
+{
+    "column_name":"@Name.#",
+    "column_type": "[Util.get_datatype('@DataType.#')]"
+  }

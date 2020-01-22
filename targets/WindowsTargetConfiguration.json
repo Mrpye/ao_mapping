@@ -1,0 +1,18 @@
+{
+  "name": "@DisplayName.#",
+  "title": "@DisplayName.#",
+  "type": "windows.endpoint",
+  "tap_id": "@Id.#",
+  "id": "",
+  "ref_type": "target",
+  "schema_id": "",
+  "properties": {
+    "port": 5985,
+    "protocol": "http",
+    "display_name": "@DisplayName.#",
+    "description": "@DisplayName.#",
+    "no_runtime_user": "[not Util.exists('@DefaultRuntimeUserId.#')]{b}",
+		"default_runtime_user_id":  "[Util.build_ref('@DefaultRuntimeUserId.#')]{!}",
+    "host": "@NetBiosName.#"
+  }
+}

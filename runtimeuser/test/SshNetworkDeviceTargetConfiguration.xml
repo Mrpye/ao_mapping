@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<RuntimeUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SshNetworkDeviceTargetConfiguration" xml:space="preserve">
+  <Id>7b2d0edd-6bc4-4172-91b0-6e6934a88729</Id>
+  <DisplayName>CentOS</DisplayName>
+  <VersionNumber>2</VersionNumber>
+  <CreatedTime>2018-10-16T10:13:08.7639434Z</CreatedTime>
+  <ModifiedTime>2018-10-16T10:21:09.9519893Z</ModifiedTime>
+  <EncryptedPassword>
+    <EncryptedForm />
+  </EncryptedPassword>
+</RuntimeUserConfiguration>

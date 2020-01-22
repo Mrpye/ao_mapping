@@ -1,0 +1,70 @@
+{
+    "cases": [
+        {
+            "name": "properties",
+            "case": [
+                {
+                    "test": "['@SnmpVersion.#'=='SNMPv1' or '@SnmpVersion.#'=='SNMPv2c']",
+                    "payload": {
+                        "description": "@DisplayName.#",
+                        "display_name": "@DisplayName.#",
+                        "community_string": "community_string",
+                        "version": "[Util.sw('@SnmpVersion.#','SNMPv1','1','SNMPv2c','2c','SNMPv3','3')]"
+                    }
+                },
+                {
+                    "test": "['@SnmpVersion.#'=='SNMPv3' and '@SecurityLevel.#' =='authPriv']",
+                    "payload": {
+                        "description": "@DisplayName.#",
+                        "display_name": "@DisplayName.#",
+                        "security": {
+                            "security_level": "@SecurityLevel.#",
+                            "auth_protocol": "[Util.sw('@AuthenticationProtocol.#','MD5','2','SHA','3')]{i}",
+                            "priv_protocol": "[Util.sw('@PrivacyProtocol.#','AES','2','DES','3','AES256',3)]{i}",
+                            "auth_key": "auth_key",
+                            "priv_key": "priv_key"
+                        },
+                        "username": "username",
+                        "version": "[Util.sw('@SnmpVersion.#','SNMPv1','1','SNMPv2c','2c','SNMPv3','3')]"
+                    }
+                },
+                {
+                    "test": "['@SnmpVersion.#'=='SNMPv3' and '@SecurityLevel.#' =='authNoPriv']",
+                    "payload": {
+                        "description": "@DisplayName.#",
+                        "display_name": "@DisplayName.#",
+                        "security": {
+                            "security_level": "@SecurityLevel.#",
+                            "auth_protocol": "[Util.sw('@AuthenticationProtocol.#','MD5','2','SHA','3')]{i}",
+                            "auth_key": "auth_key"
+                        },
+                        "username": "username",
+                        "version": "[Util.sw('@SnmpVersion.#','SNMPv1','1','SNMPv2c','2c','SNMPv3','3')]"
+                    }
+                },
+                {
+                    "test": "['@SnmpVersion.#'=='SNMPv3' and '@SecurityLevel.#' =='noAuthNoPriv']",
+                    "payload": {
+                        "description": "@DisplayName.#",
+                        "display_name": "@DisplayName.#",
+                        "security": {
+                            "security_level": "@SecurityLevel.#"
+                        },
+                        "username": "username",
+                        "version": "[Util.sw('@SnmpVersion.#','SNMPv1','1','SNMPv2c','2c','SNMPv3','3')]"
+                    }
+                }
+            ]
+        }
+    ],
+    "payload": {
+        "schema_id": "",
+        "name": "@DisplayName.#",
+        "title": "@DisplayName.#",
+        "type": "runtime_user.snmp_credentials",
+        "tap_id": "@Id.#",
+        "id": "",
+        "ref_type": "target",
+        "properties": "%properties%"
+    }
+}

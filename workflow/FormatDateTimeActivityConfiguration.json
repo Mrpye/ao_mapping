@@ -1,0 +1,31 @@
+{
+    "action": [
+      {
+        "previous_action": {
+          "id": "[Util.build_ref(Util.prev_tap_id)]",
+          "tap_id": "[Util.prev_tap_id]",
+          "schema_id": "",
+          "type": "[Util.prev_type]",
+          "base_type": "[Util.prev_base_type]"
+        },
+        "action": {
+          "id": "",
+          "tap_id": "@Id.#",
+          "ref_type": "action",
+          "schema_id": "",
+          "type": "core.format_date",
+          "base_type": "activity",
+          "name": "@DisplayName.#",
+          "properties": {
+            "continue_on_failure": false,
+            "format_string": "{i}",
+            "original_date": "@Configuration.SourceDateTime.#",
+            "skip_execution": false,
+            "use_custom_format": true,
+            "custom_format": "[Util.date_format('@Configuration.FormatString.#')]"
+          },
+          "title": "@DisplayName.#"
+        }
+      }
+    ]
+  }

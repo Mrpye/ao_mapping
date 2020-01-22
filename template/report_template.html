@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #049fd9;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CPO to AO Conversion Report</h1>
+    <table id="customers">
+        <tr>
+            <th>Scope</th>
+            <th>Name</th>
+            <th>Message</th>
+            <th>Status</th>
+            <th>id</th>
+            <th>tap_id</th>
+            <th>error_msg</th>
+        </tr>
+        {content}
+    </table>
+
+</body>

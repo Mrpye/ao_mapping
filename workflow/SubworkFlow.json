@@ -1,0 +1,33 @@
+{
+    "action": [
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.prev_tap_id,'id')]",
+                "tap_id": "[Util.prev_tap_id]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "id": "",
+                "tap_id": "@Id.#",
+                "schema_id": "",
+                "type": "workflow.sub_workflow",
+                "ref_type": "logic",
+                "base_type": "subworkflow",
+                "title": "@DisplayName.#",
+                "name": "@DisplayName.#",
+                "properties": {
+                    "skip_execution": false,
+                    "continue_on_failure": false,
+                    "input":"@InputVariableTable.VariableAssignmentsAsArray.InputVariableAssignment.#{km}",
+                    "display_name": "@DisplayName.#",
+                    "workflow_id": "[Util.build_ref('@ProcessId.#')]",
+                    "target": {
+                        "no_target": true
+                    }
+                }
+            }
+        }
+    ]
+}

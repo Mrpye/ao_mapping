@@ -1,0 +1,17 @@
+{
+    "6c3de884-e3a0-49f5-9254-ca7c957c7445": {
+        "id": "",
+        "name": "AO_Target_AMQP",
+        "properties": {
+            "description": "AO_Target_AMQP",
+            "display_name": "AO_Target_AMQP",
+            "password": "password",
+            "username": "admin"
+        },
+        "ref_type": "target",
+        "schema_id": "",
+        "tap_id": "6c3de884-e3a0-49f5-9254-ca7c957c7445",
+        "title": "AO_Target_AMQP",
+        "type": "runtime_user.amqp_password_credentials"
+    }
+}

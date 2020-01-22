@@ -1,0 +1,17 @@
+{
+   "fda61507-8a8d-4dba-8c8c-27a71c9b6f20": {
+      "id": "",
+      "properties": {
+         "description": "CPO AO Converter Bool",
+         "is_required": false,
+         "name": "CPO AO Converter Bool",
+         "scope": "global",
+         "value": false
+      },
+      "ref_type": "variable",
+      "schema_id": "",
+      "tap_id": "fda61507-8a8d-4dba-8c8c-27a71c9b6f20",
+      "title": "CPO AO Converter Bool",
+      "type": "datatype.boolean"
+   }
+}

@@ -1,0 +1,9 @@
+{
+    "schema_id": "",
+    "title": "ELSE_CONDITION",
+    "properties": {
+        "scope": "global",
+        "value": true,
+        "name": "ELSE_CONDITION"
+    }
+}

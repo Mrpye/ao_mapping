@@ -1,0 +1,21 @@
+{
+    "title": "@Event.DisplayName.#",
+    "description": "@Event.DisplayName.#",
+    "schema_id": "",
+    "type": "email.event",
+    "tap_id": "@Event.Id.#",
+    "id": "",
+    "ref_type": "event",
+    "properties": {
+        "title": "@Event.DisplayName.#",
+        "description": "@Event.DisplayName.#",
+        "display_name": "@Event.DisplayName.#",
+        "condition": "@Event.Conditions.EmailCriteriaColumnData.#{o}",
+        "target": {
+            "override_workflow_target": true,
+            "override_workflow_target_group_criteria": false,
+            "target_id": "[Util.build_ref('@Event.LoadBalancer.SingleTargetReference.HardcodedValue.Id.#')]",
+            "use_workflow_target_group": false
+        }
+    }
+}

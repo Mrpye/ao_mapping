@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<WorkflowConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:space="preserve">
+  <Id>883c834d-1c89-4f48-a9f7-e478ce080461</Id>
+  <DisplayName>Test for AO Converter Web Request</DisplayName>
+  <VersionNumber>38</VersionNumber>
+  <CreatedTime>2019-07-15T10:59:17.8344455Z</CreatedTime>
+  <ModifiedTime>2019-11-11T06:37:47.8669717Z</ModifiedTime>
+  <FirstActivity xsi:type="RootNode">
+    <Id>6b251e5d-4aea-4f29-9e7b-7d53575be6aa</Id>
+    <DisplayName />
+    <Children>
+      <ActivityNode xsi:type="ForEachNode">
+        <Id>4505db98-c1e1-412e-b2f9-841f204f3e1a</Id>
+        <DisplayName>For Each Block</DisplayName>
+        <Children>
+        </Children>
+        <ForEachSource xsi:type="PropertyReference">
+          <DisplayPath>Process.Variables.Input.AndrewTable.Rows</DisplayPath>
+          <LinkChain>
+            <Link xsi:type="PropertyNameLink">
+              <PropertyName>TIARows</PropertyName>
+            </Link>
+          </LinkChain>
+          <ObjectId>6e279df5-ff4b-472a-9fb9-483587d23c82</ObjectId>
+          <ObjectType>GlobalVariable</ObjectType>
+        </ForEachSource>
+      </ActivityNode>
+    </Children>
+  </FirstActivity>
+  <ProcessId>9627a630-f3be-4103-8cf1-537828d66ba0</ProcessId>
+</WorkflowConfiguration>

@@ -1,0 +1,1041 @@
+{
+   "core.splitstring": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResultTable.FirstRow.Value": "output.parts[0]",
+      "ResultTable.LastRow.Value": "output.parts[-1]",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "web-service.http_request": {
+      "Response": "output.response_body",
+      "StatusCode": "output.status_code",
+      "Xelapsed_time": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Xstart_time": "output.start_time",
+      "XStatusDescription": "output.status_text",
+      "Xsucceeded": "output.succeeded",
+      "Cookies": "output.cookie",
+      "Cookies.LastRow.Value": "output.cookie[-1]",
+      "Cookies.FirstRow.Value": "output.cookie[0]",
+      "ResponseHeaders": "output.response_headers",
+      "ResponseHeaders.LastRow.Value": "output.response_headers[0].value",
+      "ResponseHeaders.FirstRow.Value": "output.response_headers[-1].value",
+      "ResponseHeaders.LastRow.Name": "output.response_headers[0].name",
+      "ResponseHeaders.FirstRow.Name": "output.response_headers[-1].name"
+   },
+   "corejava.jsonpathquery": {
+      "Results.?": "output.jsonpath_queries.?"
+   },
+   "core.format_date": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "FormatResult": "output.result",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.calculate_date_time_difference": {
+      "Days": "output.days",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Hours": "output.hours",
+      "Milliseconds": "output.milliseconds",
+      "Minutes": "output.minutes",
+      "Seconds": "output.seconds",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "TotalDays": "output.total_days",
+      "TotalHours": "output.total_hours",
+      "TotalMilliseconds": "output.total_milliseconds",
+      "TotalMinutes": "output.total_minutes",
+      "TotalSeconds": "output.total_seconds"
+   },
+   "target.email.imap_endpoint": {
+      "default_runtime_user_id": "input.default_runtime_user_id",
+      "description": "input.description",
+      "display_name": "input.display_name",
+      "ignore_certificate_errors": "input.ignore_certificate_errors",
+      "polling_interval": "input.polling_interval",
+      "port": "input.port",
+      "protocol": "input.protocol",
+      "EmailServer": "input.server",
+      "EnableSSL": "input.tls_enabled"
+   },
+   "amqp.bind_queue": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "--Exchange": "output.exchange",
+      "---Queue": "output.queue",
+      "--Routing": "output.routing",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "amqp.declare_exchange": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "--ExchangeName": "output.exchange_name",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "amqp.declare_queue": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "QueueName": "output.queue_name",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "amqp.get_message": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Message.ContentHeaders.AppId": "output.messages[0].app_id",
+      "Message.GetMessageBody": "output.messages[0].body",
+      "Message.ContentHeaders.ContentEncoding": "output.messages[0].content_encoding",
+      "Message.ContentHeaders.CorrelationId": "output.messages[0].correlation_id",
+      "Message.ContentHeaders.DeliverModeStr": "output.messages[0].delivery_mode",
+      "--Messages.FirstRow.exchange_name": "output.messages[0].exchange_name",
+      "--Messages.LastRow.exchange_name": "output.messages[-1].exchange_name",
+      "Message.ContentHeaders.Expiration": "output.messages[0].expiration",
+      "--Messages.FirstRow.message_headers": "output.messages[0].message_headers",
+      "--Messages.LastRow.message_headers": "output.messages[-1].message_headers",
+      "Message.ContentHeaders.MessageId": "output.messages[0].message_id",
+      "Message.ContentHeaders.Priority": "output.messages[-1].priority",
+      "Message.ContentHeaders.ReplyTo": "output.messages[0].reply_to",
+      "Message.RoutingKey": "output.messages[0].routing_key",
+      "Message.ContentHeaders.Timestamp": "output.messages[0].timestamp",
+      "Message.ContentHeaders.Type": "output.messages[0].type",
+      "Message.ContentHeaders.UserId": "output.messages[0].user_id",
+      "XstartTime": "output.start_time"
+   },
+   "amqp.publish_message": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.api_request": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.associate_subnet_with_route_table": {
+      "AssociationId": "output.association_id",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.attach_internet_gateway": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.authorize_security_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.create_account": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Id": "output.id",
+      "XstartTime": "output.start_time",
+      "State": "output.state",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.create_ec2": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Instances.FirstRow.instance_id": "output.instances[0].instance_id",
+      "Instances.LastRow.instance_id": "output.instances[-1].instance_id",
+      "Instances.FirstRow.private_ipaddress": "output.instances[0].private_ipaddress",
+      "Instances.LastRow.private_ipaddress": "output.instances[-1].private_ipaddress",
+      "Instances.FirstRow.public_dns_name": "output.instances[0].public_dns_name",
+      "Instances.LastRow.public_dns_name": "output.instances[-1].public_dns_name",
+      "Instances.FirstRow.public_ip_address": "output.instances[0].public_ip_address",
+      "Instances.LastRow.public_ip_address": "output.instances[-1].public_ip_address",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.create_internet_gateway": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "InternetGatewayId": "output.internet_gateway_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.create_keypair": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "KeypairName": "output.keypair_name",
+      "PrivateKey": "output.private_key",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.create_route": {
+      "CreateSucceed": "output.create_succeed",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.create_route_table": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "RouteTableId": "output.route_table_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "VpcId": "output.vpc_id"
+   },
+   "--aws.create_security_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "SecurityGroupId": "output.security_group_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.create_subnet_vpc": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "State": "output.state",
+      "SubnetId": "output.subnet_id",
+      "Xsucceeded": "output.succeeded",
+      "VpcId": "output.vpc_id"
+   },
+   "--aws.create_vpc": {
+      "CidrBlock": "output.cidr_block",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "State": "output.state",
+      "Xsucceeded": "output.succeeded",
+      "VpcId": "output.vpc_id"
+   },
+   "--aws.delete_keypair": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.delete_security_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.describe_route_tables": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "RouteTables.FirstRow.route_table_id": "output.route_tables[0].route_table_id",
+      "RouteTables.LastRow.route_table_id": "output.route_tables[-1].route_table_id",
+      "RouteTables.FirstRow.vpc_id": "output.route_tables[0].vpc_id",
+      "RouteTables.LastRow.vpc_id": "output.route_tables[-1].vpc_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.describe_security_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "IpPermissionsEgress.FirstRow.cidr_block_ip_v4": "output.ip_permissions_egress[0].cidr_block_ip_v4",
+      "IpPermissionsEgress.LastRow.cidr_block_ip_v4": "output.ip_permissions_egress[-1].cidr_block_ip_v4",
+      "IpPermissionsEgress.FirstRow.from_port": "output.ip_permissions_egress[0].from_port",
+      "IpPermissionsEgress.LastRow.from_port": "output.ip_permissions_egress[-1].from_port",
+      "IpPermissionsEgress.FirstRow.ip_protocol": "output.ip_permissions_egress[0].ip_protocol",
+      "IpPermissionsEgress.LastRow.ip_protocol": "output.ip_permissions_egress[-1].ip_protocol",
+      "IpPermissionsEgress.FirstRow.to_port": "output.ip_permissions_egress[0].to_port",
+      "IpPermissionsEgress.LastRow.to_port": "output.ip_permissions_egress[-1].to_port",
+      "IpPermissionsIngress.FirstRow.cidr_block_ip_v4": "output.ip_permissions_ingress[0].cidr_block_ip_v4",
+      "IpPermissionsIngress.LastRow.cidr_block_ip_v4": "output.ip_permissions_ingress[-1].cidr_block_ip_v4",
+      "IpPermissionsIngress.FirstRow.from_port": "output.ip_permissions_ingress[0].from_port",
+      "IpPermissionsIngress.LastRow.from_port": "output.ip_permissions_ingress[-1].from_port",
+      "IpPermissionsIngress.FirstRow.ip_protocol": "output.ip_permissions_ingress[0].ip_protocol",
+      "IpPermissionsIngress.LastRow.ip_protocol": "output.ip_permissions_ingress[-1].ip_protocol",
+      "IpPermissionsIngress.FirstRow.to_port": "output.ip_permissions_ingress[0].to_port",
+      "IpPermissionsIngress.LastRow.to_port": "output.ip_permissions_ingress[-1].to_port",
+      "OwnerId": "output.owner_id",
+      "SecurityGroupDescription": "output.security_group_description",
+      "SecurityGroupName": "output.security_group_name",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "VpcId": "output.vpc_id"
+   },
+   "--aws.describe_subnets": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Subnets.FirstRow.state": "output.subnets[0].state",
+      "Subnets.LastRow.state": "output.subnets[-1].state",
+      "Subnets.FirstRow.subnet_id": "output.subnets[0].subnet_id",
+      "Subnets.LastRow.subnet_id": "output.subnets[-1].subnet_id",
+      "Subnets.FirstRow.vpc_id": "output.subnets[0].vpc_id",
+      "Subnets.LastRow.vpc_id": "output.subnets[-1].vpc_id",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.describe_vpcs": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Vpcs.FirstRow.cidr_block": "output.vpcs[0].cidr_block",
+      "Vpcs.LastRow.cidr_block": "output.vpcs[-1].cidr_block",
+      "Vpcs.FirstRow.state": "output.vpcs[0].state",
+      "Vpcs.LastRow.state": "output.vpcs[-1].state",
+      "Vpcs.FirstRow.vpc_id": "output.vpcs[0].vpc_id",
+      "Vpcs.LastRow.vpc_id": "output.vpcs[-1].vpc_id"
+   },
+   "--aws.disassociate_subnet_with_route_table": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.iam_attach_user_policy": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.iam_create_access_key": {
+      "AccessKeyId": "output.access_key_id",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "SecretAccessKey": "output.secret_access_key",
+      "XstartTime": "output.start_time",
+      "Status": "output.status",
+      "Xsucceeded": "output.succeeded",
+      "Username": "output.username"
+   },
+   "--aws.iam_create_user": {
+      "Arn": "output.arn",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "IamUserId": "output.iam_user_id",
+      "Path": "output.path",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Username": "output.username"
+   },
+   "--aws.iam_list_policies": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Policies.FirstRow.arn": "output.policies[0].arn",
+      "Policies.LastRow.arn": "output.policies[-1].arn",
+      "Policies.FirstRow.attachment_count": "output.policies[0].attachment_count",
+      "Policies.LastRow.attachment_count": "output.policies[-1].attachment_count",
+      "Policies.FirstRow.create_date": "output.policies[0].create_date",
+      "Policies.LastRow.create_date": "output.policies[-1].create_date",
+      "Policies.FirstRow.default_version_id": "output.policies[0].default_version_id",
+      "Policies.LastRow.default_version_id": "output.policies[-1].default_version_id",
+      "Policies.FirstRow.path": "output.policies[0].path",
+      "Policies.LastRow.path": "output.policies[-1].path",
+      "Policies.FirstRow.policy_id": "output.policies[0].policy_id",
+      "Policies.LastRow.policy_id": "output.policies[-1].policy_id",
+      "Policies.FirstRow.policy_name": "output.policies[0].policy_name",
+      "Policies.LastRow.policy_name": "output.policies[-1].policy_name",
+      "Policies.FirstRow.update_date": "output.policies[0].update_date",
+      "Policies.LastRow.update_date": "output.policies[-1].update_date",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.iam_list_user": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "UserIds.FirstRow.arn": "output.user_ids[0].arn",
+      "UserIds.LastRow.arn": "output.user_ids[-1].arn",
+      "UserIds.FirstRow.creation_date": "output.user_ids[0].creation_date",
+      "UserIds.LastRow.creation_date": "output.user_ids[-1].creation_date",
+      "UserIds.FirstRow.iam_user_id": "output.user_ids[0].iam_user_id",
+      "UserIds.LastRow.iam_user_id": "output.user_ids[-1].iam_user_id",
+      "UserIds.FirstRow.path": "output.user_ids[0].path",
+      "UserIds.LastRow.path": "output.user_ids[-1].path",
+      "UserIds.FirstRow.username": "output.user_ids[0].username",
+      "UserIds.LastRow.username": "output.user_ids[-1].username"
+   },
+   "--aws.import_keypair": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "KeypairName": "output.keypair_name",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.list_create_account_status": {
+      "CreateAccountStatuses.FirstRow.account_id": "output.create_account_statuses[0].account_id",
+      "CreateAccountStatuses.LastRow.account_id": "output.create_account_statuses[-1].account_id",
+      "CreateAccountStatuses.FirstRow.account_name": "output.create_account_statuses[0].account_name",
+      "CreateAccountStatuses.LastRow.account_name": "output.create_account_statuses[-1].account_name",
+      "CreateAccountStatuses.FirstRow.created_date": "output.create_account_statuses[0].created_date",
+      "CreateAccountStatuses.LastRow.created_date": "output.create_account_statuses[-1].created_date",
+      "CreateAccountStatuses.FirstRow.failure_reason": "output.create_account_statuses[0].failure_reason",
+      "CreateAccountStatuses.LastRow.failure_reason": "output.create_account_statuses[-1].failure_reason",
+      "CreateAccountStatuses.FirstRow.id": "output.create_account_statuses[0].id",
+      "CreateAccountStatuses.LastRow.id": "output.create_account_statuses[-1].id",
+      "CreateAccountStatuses.FirstRow.state": "output.create_account_statuses[0].state",
+      "CreateAccountStatuses.LastRow.state": "output.create_account_statuses[-1].state",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.reboot_ec2": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.revoke_security_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.start_ec2": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Instances.FirstRow.current_status": "output.instances[0].current_status",
+      "Instances.LastRow.current_status": "output.instances[-1].current_status",
+      "Instances.FirstRow.instance_id": "output.instances[0].instance_id",
+      "Instances.LastRow.instance_id": "output.instances[-1].instance_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.stop_ec2": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Instances.FirstRow.current_status": "output.instances[0].current_status",
+      "Instances.LastRow.current_status": "output.instances[-1].current_status",
+      "Instances.FirstRow.instance_id": "output.instances[0].instance_id",
+      "Instances.LastRow.instance_id": "output.instances[-1].instance_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--aws.terminate_ec2": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Instances.FirstRow.current_status": "output.instances[0].current_status",
+      "Instances.LastRow.current_status": "output.instances[-1].current_status",
+      "Instances.FirstRow.instance_id": "output.instances[0].instance_id",
+      "Instances.LastRow.instance_id": "output.instances[-1].instance_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.add_billing_unit_to_cost_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.add_cloud_account": {
+      "AccountId": "output.account_id",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.api_request": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.associate_cost_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.billing_unit": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Id": "output.id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.create_cost_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Id": "output.id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.delete_cloud_account": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.delete_cost_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.get_cloud_context": {
+      "ActionType": "output.action_type",
+      "AppId": "output.app_id",
+      "AppName": "output.app_name",
+      "AppOwnerId": "output.app_owner_id",
+      "AppVersion": "output.app_version",
+      "CloudFamily": "output.cloud_family",
+      "CloudRegion": "output.cloud_region",
+      "CloudRegionId": "output.cloud_region_id",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "JobId": "output.job_id",
+      "JobName": "output.job_name",
+      "JobOwnerId": "output.job_owner_id",
+      "OwnerName": "output.owner_name",
+      "ResponseBody": "output.response_body",
+      "ServiceId": "output.service_id",
+      "ServiceName": "output.service_name",
+      "ServiceOwnerId": "output.service_owner_id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "VmHostname": "output.vm_hostname",
+      "VmId": "output.vm_id",
+      "VmOwnerId": "output.vm_owner_id",
+      "VmStatus": "output.vm_status"
+   },
+   "--ccs.get_cost_group_type": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Id": "output.id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.get_cost_groups": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Id": "output.id",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.manage_deployment_environment": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--ccs.update_cost_group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.addrowtotable": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "RowIndex": "output.row_count",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.calculate_date": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Result": "output.result",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.deleterowfromtable": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "RowCount": "output.row_count",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "--core.escape_regex": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Escaped": "output.escaped",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.find_string": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "OccurrenceCount": "output.has_match",
+      "FirstOccurrence": "output.matches[0].begin",
+      "LastOccurrence": "output.matches[-1].begin",
+      "--Matches.FirstRow.end": "output.matches[0].end",
+      "--Matches.LastRow.end": "output.matches[-1].end",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.json2xml": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Output": "output.output_xml",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.matchregex": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "MatchCount": "output.has_match",
+      "AllMatchesTable.TIAColumns.Value.Name": "output.match_groups",
+      "AllMatchesTable.FirstRow.Value": "output.matching_strings[0]",
+      "AllMatchesTable.LastRow.Value": "output.matching_strings[-1]",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.parse_date": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "DateTimeResult.UniversalTimeString": "output.result",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.read_table_from_text": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResultTable.FirstRow.?": "output.read_table_from_text[0]",
+      "ResultTable.LastRow.?": "output.read_table_from_text[-1]",
+      "ResultTable": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.replacestring": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Result": "output.result_string",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.selectfromtable": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResultTable.FirstRow.?": "output.output_table[0]",
+      "ResultTable.LastRow.?": "output.output_table[-1]",
+      "ResultTable": "output.response_body",
+      "RowCount": "output.row_count",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.set_multiple_variables": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.sleep": {
+      "ResolvedDefinition.Seconds": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.string2lower": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Result": "output.lowercase_text",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.string2upper": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Result": "output.uppercase_text"
+   },
+   "core.substring": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Result": "output.substring",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.trim_string": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Result": "output.trimmed"
+   },
+   "core.updaterowintable": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "RowsUpdated": "output.row_count",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.xml2json": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Output": "output.output_json",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "core.xpathquery": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Results.?": "output.xpath_queries.?"
+   },
+   "core.xsl_transform": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Output": "output.output_document",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "email.smtp_send_email": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.break": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.condition_block": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.continue": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.for_each": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "?": "input.source_array|[@|].?"
+   },
+   "logic.group": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.if_else": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.parallel": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.parallel_block": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.start_point": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "logic.while": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "windows.control_windows_service": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "--": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "windows.copy_folder": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "windows.correlate_windows_events": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody.FirstRow.EntryType": "output.response_body[0].EntryType",
+      "ResponseBody.LastRow.EntryType": "output.response_body[-1].EntryType",
+      "ResponseBody.FirstRow.InstanceId": "output.response_body[0].InstanceId",
+      "ResponseBody.LastRow.InstanceId": "output.response_body[-1].InstanceId",
+      "ResponseBody.FirstRow.Message": "output.response_body[0].Message",
+      "ResponseBody.LastRow.Message": "output.response_body[-1].Message",
+      "ResponseBody.FirstRow.Source": "output.response_body[0].Source",
+      "ResponseBody.LastRow.Source": "output.response_body[-1].Source",
+      "ResponseBody.FirstRow.TimeGenerated": "output.response_body[0].TimeGenerated",
+      "ResponseBody.LastRow.TimeGenerated": "output.response_body[-1].TimeGenerated",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "amqp.event": {
+      "ContentHeaders.AppId": "output.app_id",
+      "MessageBody": "output.body",
+      "ContentHeaders.ContentEncoding": "output.content_encoding",
+      "ContentHeaders.ContentType": "output.content_type",
+      "ContentHeaders.CorrelationId": "output.correlation_id",
+      "ContentHeaders.DeliveryMode": "output.delivery_mode",
+      "ContentHeaders.Expiration": "output.expiration",
+      "ContentHeaders.MessageId": "output.message_id",
+      "ContentHeaders.Priority": "output.priority",
+      "ContentHeaders.ReplyTo": "output.reply_to",
+      "ContentHeaders.Timestamp": "output.timestamp",
+      "ContentHeaders.Type": "output.type",
+      "ContentHeaders.UserId": "output.user_id"
+   },
+   "approval_task.event": {
+      "AppId": "output.app_id",
+      "Body": "output.body",
+      "ContentEncoding": "output.content_encoding",
+      "ContentType": "output.content_type",
+      "CorrelationId": "output.correlation_id",
+      "DeliveryMode": "output.delivery_mode",
+      "Expiration": "output.expiration",
+      "MessageId": "output.message_id",
+      "Priority": "output.priority",
+      "ReplyTo": "output.reply_to",
+      "Timestamp": "output.timestamp",
+      "Type": "output.type",
+      "UserId": "output.user_id"
+   },
+   "email.event": {
+      "Message": "output.message",
+      "From": "output.sender",
+      "Subject": "output.subject"
+   },
+   "target.amqp.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "IgnoreCertificateErrors": "input.ignore_certificate_errors",
+      "Port": "input.port",
+      "SslEnabled": "input.ssl_enabled",
+      "Vhost": "input.vhost"
+   },
+   "target.aws.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username",
+      "Region": "input.region"
+   },
+   "target.ccsuite.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username"
+   },
+   "target.ccsuite.integration_endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisableCertificateValidation": "input.disable_certificate_validation",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username"
+   },
+   "target.corejava.jdbc_endpoint": {
+      "Database": "input.database",
+      "Dbtype": "input.dbtype",
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "InstanceName": "input.instance_name",
+      "Port": "input.port",
+      "Server": "input.server"
+   },
+   "target.email.imap_endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "IgnoreCertificateErrors": "input.ignore_certificate_errors",
+      "PollingInterval": "input.polling_interval",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "Server": "input.server",
+      "TlsEnabled": "input.tls_enabled"
+   },
+   "target.email.pop3_endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "IgnoreCertificateErrors": "input.ignore_certificate_errors",
+      "PollingInterval": "input.polling_interval",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "Server": "input.server",
+      "TlsEnabled": "input.tls_enabled"
+   },
+   "target.email.smtp_endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "NoRuntimeUser": "input.no_runtime_user",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "Server": "input.server"
+   },
+   "target.gcp.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username",
+      "Scope": "input.scope"
+   },
+   "target.git.endpoint": {
+      "Branch": "input.branch",
+      "Codepath": "input.codepath",
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "NoRuntimeUser": "input.no_runtime_user",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username",
+      "Repo": "input.repo",
+      "RepoType": "input.repo_type",
+      "RepoVersion": "input.repo_version"
+   },
+   "target.kafka.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisableCertificateValidation": "input.disable_certificate_validation",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "NoRuntimeUser": "input.no_runtime_user",
+      "Port": "input.port",
+      "SslEnable": "input.ssl_enable"
+   },
+   "target.meraki.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username"
+   },
+   "target.psc.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username"
+   },
+   "target.python.ansible_tower_endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisableCertificateValidation": "input.disable_certificate_validation",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username"
+   },
+   "target.snmp.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port"
+   },
+   "target.terminal.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port",
+      "PromptPattern": "input.prompt_pattern",
+      "Protocol": "input.protocol",
+      "SucceededPromptPatterns.FirstRow.Value": "input.succeeded_prompt_patterns[0]",
+      "SucceededPromptPatterns.LastRow.Value": "input.succeeded_prompt_patterns[-1]"
+   },
+   "target.terminal.unix_linux_endpoint": {
+      "BashShell": "input.bash_shell",
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port"
+   },
+   "target.terraform.endpoint": {
+      "BashShell": "input.bash_shell",
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port"
+   },
+   "target.web-service.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisableCertificateValidation": "input.disable_certificate_validation",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "NoRuntimeUser": "input.no_runtime_user",
+      "Path": "input.path",
+      "Port": "input.port",
+      "Protocol": "input.protocol",
+      "ProxyBypassList": "input.proxy_bypass_list",
+      "ProxyPassword": "input.proxy_password",
+      "ProxyUrl": "input.proxy_url",
+      "ProxyUsername": "input.proxy_username"
+   },
+   "target.windows.endpoint": {
+      "DefaultRuntimeUserId": "input.default_runtime_user_id",
+      "Description": "input.description",
+      "DisplayName": "input.display_name",
+      "Host": "input.host",
+      "Port": "input.port",
+      "Protocol": "input.protocol"
+   }
+}

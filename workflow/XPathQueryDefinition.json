@@ -1,0 +1,5 @@
+{
+    "xpath_query_type": "[Util.lcase('@ReturnType.#')]",
+    "xpath_query": "@Query.#",
+    "xpath_query_name": "@DisplayName.#"
+  }

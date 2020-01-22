@@ -1,0 +1,38 @@
+{
+    "WebTargetConfiguration": {
+        "CPO": "WebTargetConfiguration",
+        "AO": "web-service.endpoint"
+    },
+    "SnmpManagerTargetConfiguration": {
+        "CPO": "SnmpManagerTargetConfiguration",
+        "AO": "snmp.endpoint"
+    },
+    "GitRepositoryTargetConfiguration": {
+        "CPO": "GitRepositoryTargetConfiguration",
+        "AO": "git.endpoint"
+    },
+    "EmailIMAPTargetConfiguration": {
+        "CPO": "EmailIMAPTargetConfiguration",
+        "AO": "email.imap_endpoint"
+    },
+    "EmailPOP3TargetConfiguration": {
+        "CPO": "EmailPOP3TargetConfiguration",
+        "AO": "email.pop3_endpoint"
+    },
+    "EmailSMTPTargetConfiguration": {
+        "CPO": "EmailSMTPTargetConfiguration",
+        "AO": "email.smtp_endpoint"
+    },
+    "WindowsTargetConfiguration": {
+        "CPO": "WindowsTargetConfiguration",
+        "AO": "windows.endpoint"
+    },
+    "UnixTargetConfiguration": {
+        "CPO": "UnixTargetConfiguration",
+        "AO": "terminal.unix_linux_endpoint"
+    },
+    "SshNetworkDeviceTargetConfiguration": {
+        "CPO": "SshNetworkDeviceTargetConfiguration",
+        "AO": "terminal.endpoint"
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "variable_to_update": "@VariableToSet.#",
+    "variable_value_new": "@NewValue.#"
+  }

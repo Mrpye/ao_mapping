@@ -1,0 +1,14 @@
+{
+    "title": "@Event.DisplayName.#",
+    "description": "@Event.DisplayName.#",
+    "schema_id": "",
+    "type": "email.event",
+    "tap_id": "@Event.Id.#",
+    "id": "",
+    "ref_type": "event",
+    "properties": {
+        "title": "@Event.DisplayName.#",
+        "description": "@Event.DisplayName.#",
+        "condition": "@Event.OriginalTaskMatchingCriteria.GenericCriteria.#{o}"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "attribute_type":"[Util.get_oid('@ValueType.#')]",
+    "oid": "@ObjectIdentifier.#",
+    "value": "@Value.#"
+}

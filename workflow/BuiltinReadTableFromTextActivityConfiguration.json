@@ -1,0 +1,38 @@
+{
+  "action": [
+    {
+      "previous_action": {
+        "id": "[Util.build_ref(Util.prev_tap_id)]",
+        "tap_id": "[Util.prev_tap_id]",
+        "schema_id": "",
+        "type": "[Util.prev_type]",
+        "base_type": "[Util.prev_base_type]"
+      },
+      "action": {
+        "id": "",
+        "tap_id": "@Id.#",
+        "ref_type": "action",
+        "schema_id": "",
+        "type": "core.read_table_from_text",
+        "base_type": "activity",
+        "name": "@DisplayName.#",
+        "title": "@DisplayName.#",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "@DisplayName.#",
+          "persist_output": "['true' if '@Configuration.xml:space.#' =='preserve' else 'false']{b}",
+          "populate_columns": "@Configuration.ReturnAllColumns.#{b}",
+          "skip_execution": false,
+          "description": "@DisplayName.#",
+          "table_columns":"@Configuration.Columns.BuiltinTableColumn.#{am}",
+          "input_text": "@Configuration.SourceText.#",
+          "delimiters": [
+            {
+              "delimiter": ","
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

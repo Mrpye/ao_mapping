@@ -1,0 +1,12 @@
+{ 
+   "category_type":"custom",
+   "description":"@DisplayName.#",
+   "name":"@DisplayName.#",
+   "schema_id":"",
+   "title":"@DisplayName.#",
+   "tap_id":"@Id.#",
+   "ref_type":"category",
+   "id":"",
+   "type":"basic.category",
+   "base_type": "category"
+}

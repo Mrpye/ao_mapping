@@ -1,0 +1,18 @@
+{
+    "a1fa7ac7-a0e2-411a-9963-84c8230cc1c9":{
+       "id":"",
+       "name":"AO_Target_terminal",
+       "properties":{
+          "admin_password":"password",
+          "description":"terminal password key",
+          "display_name":"user",
+          "password":"password",
+          "user":"admin"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"a1fa7ac7-a0e2-411a-9963-84c8230cc1c9",
+       "title":"AO_Target_terminal",
+       "type":"runtime_user.terminal_password_credentials"
+    }
+ }

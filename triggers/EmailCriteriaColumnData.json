@@ -1,0 +1,5 @@
+{
+    "left_operand":"$ouput.@In.#$",
+    "operator":"mw",
+    "right_operand":"@ScanText.#"
+}

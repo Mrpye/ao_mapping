@@ -1,0 +1,30 @@
+{
+    "id": "",
+    "tap_id":"@Id.#",
+    "schema_id": "",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "name": "@DisplayName.#",
+    "title": "@DisplayName.#",
+    "categories": "@CategoryIds.guid.#{ar'category'}",
+    "variables": "@VariableDefinitions.VariableConfiguration.#{a}",
+    "properties": {
+        "display_name": "@DisplayName.#",
+        "atomic": {
+            "is_atomic": false
+        },
+        "delete_workflow_instance": false,
+        "runtime_user": {
+            "override_target_runtime_user": false,
+            "specify_on_workflow_start": false,
+            "target_default": true
+        },
+        "target": {
+            "execute_on_target_group": false,
+            "execute_on_workflow_target": false,
+            "no_target": true,
+            "specify_on_workflow_start": false
+        },
+        "owner": "system"
+    }
+}

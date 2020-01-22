@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<TargetGroupConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ByTypeTargetGroupConfiguration" xml:space="preserve">
+  <Id>699cd9d7-524b-4969-bc1f-bf3905bebc05</Id>
+  <DisplayName>AO Target Group</DisplayName>
+  <VersionNumber>-1</VersionNumber>
+  <CreatedTime>2019-12-04T10:33:41.8309041Z</CreatedTime>
+  <ModifiedTime>2019-12-04T11:12:29.2927938Z</ModifiedTime>
+  <Enabled>true</Enabled>
+  <TargetType>Tidal.Automation.EmailAdapter.Common.EmailIMAPTargetConfiguration, Tidal.Automation.EmailAdapter.Common</TargetType>
+  <TargetTypeExtensionId>3bb9305d-2d23-d690-ed51-3b7472a8258d</TargetTypeExtensionId>
+  <TargetCriteria>
+    <ConditionDefinition xsi:type="VariableConditionDefinition">
+      <Id>a2d0fdf8-5a7e-40bd-82c1-65028968f54b</Id>
+      <Expression xsi:type="SubstitutableString">
+        <HardcodedValue>test</HardcodedValue>
+      </Expression>
+      <Comparison>Equals</Comparison>
+      <VariableReference xsi:type="PropertyReference">
+        <DisplayPath>Email Account (IMAP).Email Server</DisplayPath>
+        <LinkChain>
+          <Link xsi:type="PropertyNameLink">
+            <PropertyName>EmailServer</PropertyName>
+          </Link>
+        </LinkChain>
+        <ObjectType>Target</ObjectType>
+      </VariableReference>
+    </ConditionDefinition>
+    <ConditionDefinition xsi:type="VariableConditionDefinition">
+      <Id>1d597f06-71f0-4c84-bf6b-75e1839cf1bf</Id>
+      <Expression xsi:type="SubstitutableBoolean">
+        <HardcodedValue>true</HardcodedValue>
+      </Expression>
+      <Comparison>Equals</Comparison>
+      <VariableReference xsi:type="PropertyReference">
+        <DisplayPath>Email Account (IMAP).Enable SSL</DisplayPath>
+        <LinkChain>
+          <Link xsi:type="PropertyNameLink">
+            <PropertyName>EnableSSL</PropertyName>
+          </Link>
+        </LinkChain>
+        <ObjectType>Target</ObjectType>
+      </VariableReference>
+    </ConditionDefinition>
+  </TargetCriteria>
+</TargetGroupConfiguration>

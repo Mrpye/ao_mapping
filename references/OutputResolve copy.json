@@ -1,0 +1,89 @@
+{
+    "core.splitstring": {
+        "XelapsedTime": "output.elapsed_time",
+        "EndTime": "output.end_time",
+        "ResultTable.FirstRow.Value": "output.parts[0]",
+        "ResultTable.LastRow.Value": "output.parts[-1]",
+        "XstartTime": "output.start_time",
+        "Xsucceeded": "output.succeeded"
+    },
+    "web-service.http_request": {
+        "Response": "output.response_body",
+        "StatusCode": "output.status_code",
+        "Xelapsed_time": "output.elapsed_time",
+        "EndTime": "output.end_time",
+        "Xstart_time": "output.start_time",
+        "XStatusDescription": "output.status_text",
+        "Xsucceeded": "output.succeeded",
+        "Cookies": "output.cookie",
+        "Cookies.LastRow.Value": "output.cookie[-1]",
+        "Cookies.FirstRow.Value": "output.cookie[0]",
+        "ResponseHeaders": "output.response_headers",
+        "ResponseHeaders.LastRow.Value": "output.response_headers[0].value",
+        "ResponseHeaders.FirstRow.Value": "output.response_headers[-1].value",
+        "ResponseHeaders.LastRow.Name": "output.response_headers[0].name",
+        "ResponseHeaders.FirstRow.Name": "output.response_headers[-1].name"
+    },
+    "corejava.jsonpathquery": {
+        "Results.?": "output.jsonpath_queries.?"
+    },
+    "logic.for_each": {
+        "?": "input.source_array|[|@|].?"
+    },
+    "core.parse_date": {
+        "XelapsedTime": "output.elapsed_time",
+        "EndTime": "output.end_time",
+        "DateTimeResult": "output.result",
+        "XstartTime": "output.start_time",
+        "Xsucceeded": "output.succeeded"
+    },
+    "core.format_date": {
+        "XelapsedTime": "output.elapsed_time",
+        "EndTime": "output.end_time",
+        "DateTimeResult": "output.result",
+        "XstartTime": "output.start_time",
+        "Xsucceeded": "output.succeeded"
+    },
+    "core.calculate_date_time_difference": {
+        "Days": "output.days",
+        "XelapsedTime": "output.elapsed_time",
+        "EndTime": "output.end_time",
+        "Hours": "output.hours",
+        "Milliseconds": "output.milliseconds",
+        "Minutes": "output.minutes",
+        "Seconds": "output.seconds",
+        "XstartTime": "output.start_time",
+        "Xsucceeded": "output.succeeded",
+        "TotalDays": "output.total_days",
+        "TotalHours": "output.total_hours",
+        "TotalMilliseconds": "output.total_milliseconds",
+        "TotalMinutes": "output.total_minutes",
+        "TotalSeconds": "output.total_seconds"
+    },
+    "core.json2xml": {
+        "XelapsedTime": "output.elapsed_time",
+        "EndTime": "output.end_time",
+        "OutputXml": "output.output_xml",
+        "XstartTime": "output.start_time",
+        "Xsucceeded": "output.succeeded"
+    },
+    "core.xml2json": {
+        "XelapsedTime": "output.elapsed_time",
+        "EndTime": "output.end_time",
+        "OutputJson": "output.output_json",
+        "XstartTime": "output.start_time",
+        "Xsucceeded": "output.succeeded"
+    },
+    "target.email.imap_endpoint": {
+        "default_runtime_user_id": "input.default_runtime_user_id",
+        "description": "input.description",
+        "display_name": "input.display_name",
+        "ignore_certificate_errors": "input.ignore_certificate_errors",
+        "polling_interval": "input.polling_interval",
+        "port": "input.port",
+        "protocol": "input.protocol",
+        "EmailServer": "input.server",
+        "EnableSSL": "input.tls_enabled"
+    }
+}
+

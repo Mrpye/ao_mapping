@@ -1,0 +1,17 @@
+{
+   "5b1f320e-e61f-4ea4-b85b-558b14d6825e":{
+      "id":"",
+      "name":"New SNMP Credentials v2c",
+      "properties":{
+         "description":"New SNMP Credentials v2c",
+         "display_name":"New SNMP Credentials v2c",
+         "community_string":"community_string",
+         "version":"2c"
+      },
+      "ref_type":"target",
+      "schema_id":"",
+      "tap_id":"5b1f320e-e61f-4ea4-b85b-558b14d6825e",
+      "title":"New SNMP Credentials v2c",
+      "type":"runtime_user.snmp_credentials"
+   }
+}

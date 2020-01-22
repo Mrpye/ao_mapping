@@ -1,0 +1,5 @@
+{
+    "left_operand":"@VariableReference.#{m}",
+    "operator":"[Util.lookup_comp('@Comparison.#')]",
+    "right_operand":"@Expression.#"
+}

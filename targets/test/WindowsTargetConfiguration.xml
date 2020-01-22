@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<TargetConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="WindowsTargetConfiguration" xml:space="preserve">
+  <Id>5391d12f-9efe-48ad-9aaf-acf7ce86793c</Id>
+  <DisplayName>AO_Target_Microsoft_Windows_Endpoint</DisplayName>
+  <CreatedTime>2019-12-03T12:05:32.7859195Z</CreatedTime>
+  <ModifiedTime>2019-12-03T12:05:32.7859195Z</ModifiedTime>
+  <Owner xsi:type="SidIdentity">
+    <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-1147</SecurityIdentifier>
+  </Owner>
+  <DefaultRuntimeUserId>3dca7a2e-ba42-461b-a135-d27e7d1c4fda</DefaultRuntimeUserId>
+  <TypeExtensionId>2097ba7b-3e94-0c5b-8243-90df2cca8626</TypeExtensionId>
+  <NetBiosName>192.168.9.57</NetBiosName>
+</TargetConfiguration>

@@ -1,0 +1,17 @@
+{
+    "title":"@Event.DisplayName.#",
+    "description":"@Event.DisplayName.#",
+    "target_id":"[Util.build_ref('@Event.LoadBalancer.SingleTargetReference.HardcodedValue.Id.#')]",
+    "schema_id": "",
+    "type": "amqp.event",
+    "tap_id": "@Event.Id.#",
+    "id": "",
+    "ref_type": "event",
+    "properties":{
+       "title":"@Event.DisplayName.#",
+       "description":"@Event.DisplayName.#",
+       "target_id":"[Util.build_ref('@Event.LoadBalancer.SingleTargetReference.HardcodedValue.Id.#')]",
+       "queue_name":"@Event.QueueName.#",
+       "conditions": "@Event.MatchingCriteria.GenericCriteria.#{o}"
+    }
+ }

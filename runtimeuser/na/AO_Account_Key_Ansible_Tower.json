@@ -1,0 +1,16 @@
+# Account Key - Ansible Tower creds
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.ansible_tower_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "ansible_key",
+		"description": "ansible tower key test",
+		"username": "admin",
+		"password": "password"
+    }
+}

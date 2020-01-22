@@ -1,0 +1,60 @@
+{
+    "action": [
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.prev_tap_id,'id')]",
+                "tap_id": "[Util.prev_tap_id]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "id": "",
+                "tap_id": "@Id.#",
+                "ref_type": "action",
+                "schema_id": "",
+                "type": "web-service.http_request",
+                "base_type": "activity",
+                "name": "@DisplayName.#",
+                "properties": {
+                    "accept": "@Configuration.Accept.#",
+                    "action_timeout": "@Configuration.Timeout.Period.#{i}",
+                    "allow_auto_redirect": "@Configuration.AllowAutoRedirect.#{b}",
+                    "content_type": "[Util.trim(Util.clean('@Configuration.ContentType.#','charset=utf-8',';'))]",
+                    "continue_on_error_status_code": true,
+                    "continue_on_failure": true,
+                    "cookie": [],
+                    "custom_headers": "@Configuration.Headers.Header.#{am}",
+                    "description": "@DisplayName.#",
+                    "display_name": "@DisplayName.#",
+                    "method": "@Configuration.Method.#",
+                    "relative_url": "@Configuration.RelativeUrl.#",
+                    "skip_execution": false,
+                    "runtime_user": {
+                        "override_target_runtime_user": true,
+                        "runtime_user_id": "01C4W2QP57NMC3TaQUmnJfuWmJCSZ6fETtE"
+                    },
+                    "runtime_user": {
+                        "override_target_runtime_user": false,
+                        "target_default": true
+                    },
+                    "target": {
+                        "override_workflow_target": true,
+                        "override_workflow_target_group_criteria": false,
+                        "target_id": "[Util.build_ref('@Configuration.TargetLoadBalancer.SingleTargetReference.HardcodedValue.Id.#')]",
+                        "use_workflow_target_group": false
+                    }
+                },
+                "title": "HTTP Request"
+            }
+        }
+    ],
+    "output": [
+        {
+            "Response": "response_body"
+        },
+        {
+            "StatusCode": "status_code"
+        }
+    ]
+}

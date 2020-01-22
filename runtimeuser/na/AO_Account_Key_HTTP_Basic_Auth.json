@@ -1,0 +1,17 @@
+# Account Key - HTTP Basic Auth
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.web-service_basic_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"auth_option": "Basic",
+		"display_name": "http_basic_key",
+		"description": "http basic key test",
+		"basic_username": "admin",
+		"basic_password": "password"
+    }
+}

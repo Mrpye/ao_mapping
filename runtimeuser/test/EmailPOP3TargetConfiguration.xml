@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<RuntimeUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="EmailPOP3TargetConfiguration" xml:space="preserve">
+  <Id>cc0f047e-5bbf-4a83-b224-b42b50052e6c</Id>
+  <DisplayName>AO_Target_POP3_Endpoint</DisplayName>
+  <CreatedTime>2019-12-03T11:30:30.3138354Z</CreatedTime>
+  <ModifiedTime>2019-12-03T11:30:30.3138354Z</ModifiedTime>
+  <EncryptedPassword>
+    <EncryptedForm />
+  </EncryptedPassword>
+</RuntimeUserConfiguration>

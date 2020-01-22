@@ -1,0 +1,4 @@
+{
+    "value": "[Util.clean('@DisplayPath.#',' ')]",
+    "property_name": "@Value.#"
+  }

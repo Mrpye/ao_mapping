@@ -1,0 +1,17 @@
+{
+    "cc0f047e-5bbf-4a83-b224-b42b50052e6c":{
+       "id":"",
+       "name":"AO_Target_POP3_Endpoint",
+       "properties":{
+          "description":"AO_Target_POP3_Endpoint",
+          "display_name":"AO_Target_POP3_Endpoint",
+          "password":"password",
+          "sender":"email@test.co.uk"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"cc0f047e-5bbf-4a83-b224-b42b50052e6c",
+       "title":"AO_Target_POP3_Endpoint",
+       "type":"runtime_user.email_credentials"
+    }
+ }

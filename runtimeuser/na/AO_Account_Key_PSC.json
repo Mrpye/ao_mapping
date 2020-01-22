@@ -1,0 +1,16 @@
+# Account Key - PSC
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.psc_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "psc_key",
+		"description": "psc key test",
+		"username": "admin",
+		"password": "password"
+    }
+}

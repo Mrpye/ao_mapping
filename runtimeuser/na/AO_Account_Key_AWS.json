@@ -1,0 +1,16 @@
+# Account Key - AWS creds
+{
+	"schema_id": "",
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "runtime_user.aws_credentials",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+    "properties": {
+		"display_name": "aws_key",
+		"description": "aws key test",
+		"access_key": "123456",
+		"secret_key": "098765"
+    }
+}

@@ -1,0 +1,17 @@
+{
+   "9464c8f9-6c75-4231-a9ee-72f3cbd72624":{
+      "id":"",
+      "name":"New SNMP Credentials v1",
+      "properties":{
+         "description":"New SNMP Credentials v1",
+         "display_name":"New SNMP Credentials v1",
+         "community_string":"community_string",
+         "version":"1"
+      },
+      "ref_type":"target",
+      "schema_id":"",
+      "tap_id":"9464c8f9-6c75-4231-a9ee-72f3cbd72624",
+      "title":"New SNMP Credentials v1",
+      "type":"runtime_user.snmp_credentials"
+   }
+}

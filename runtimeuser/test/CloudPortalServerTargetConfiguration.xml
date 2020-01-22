@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<RuntimeUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CloudPortalServerTargetConfiguration" xml:space="preserve">
+  <Id>2bdbcf36-4595-4f9e-b865-eeab3752038f</Id>
+  <DisplayName>AO_Target_PSC</DisplayName>
+  <Description>01BY4DUHTAMMU44ybQ9hLwTp7Qd0TTeF7cV</Description>
+  <VersionNumber>2</VersionNumber>
+  <CreatedTime>2019-12-03T11:27:15.4865805Z</CreatedTime>
+  <ModifiedTime>2019-12-03T11:28:12.9676952Z</ModifiedTime>
+  <EncryptedPassword>
+    <EncryptedForm />
+  </EncryptedPassword>
+</RuntimeUserConfiguration>

@@ -1,0 +1,18 @@
+{
+  "name": "@DisplayName.#",
+  "title": "@DisplayName.#",
+  "type": "corejava.jdbc_endpoint",
+  "tap_id": "@Id.#",
+  "id": "",
+  "ref_type": "target",
+  "schema_id": "",
+  "properties": {
+    "display_name": "@DisplayName.#",
+    "description": "@DisplayName.#",
+    "default_runtime_user_id": "01BM1QSC4X1U37RTE0GFXghAEb147Y4uygh",
+    "dbtype": "mysql",
+    "server": "192.168.9.1",
+    "port": 446,
+    "database": "target_DB"
+  }
+}

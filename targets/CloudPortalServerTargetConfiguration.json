@@ -1,0 +1,17 @@
+{
+    "name":"@DisplayName.#",
+    "title":"@DisplayName.#",
+    "type":"psc.endpoint",
+    "tap_id":"@Id.#",
+    "id":"",
+    "ref_type":"target",
+    "properties":{
+       "display_name":"@DisplayName.#",
+       "description":"@DisplayName.#",
+       "default_runtime_user_id":"[Util.build_ref('@DefaultRuntimeUserId.#')]",
+       "protocol":"[Util.get_scheme('@ServerName.#','https')]",
+       "host":"[Util.get_host('@ServerName.#')]",
+       "port":"[Util.get_port('@ServerName.#','8080')]{i}"
+    },
+    "schema_id":""
+ }

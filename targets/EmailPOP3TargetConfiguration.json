@@ -1,0 +1,21 @@
+{
+	"name": "@DisplayName.#",
+	"title": "@DisplayName.#",
+	"type": "email.pop3_endpoint",
+	"tap_id": "@Id.#",
+	"id": "",
+	"ref_type": "target",
+	"schema_id": "",
+	"properties": {
+		"ignore_certificate_errors": "@IgnoreCertificateError.#{b}",
+		"polling_interval": "[Util.fix_interval('@PollingInterval.Period.#','@PollingInterval.DisplayUnits.#')]{i}",
+		"port": "@Port.#{i}",
+		"protocol":  "@ProtocolEnum.#",
+		"tls_enabled":  "@EnableTLS.#{b}",
+		"display_name": "@DisplayName.#",
+		"description": "@DisplayName.#",
+		"no_runtime_user": "[not Util.exists('@DefaultRuntimeUserId.#')]{b}",
+		"default_runtime_user_id":  "[Util.build_ref('@DefaultRuntimeUserId.#')]{!}",
+		"server": "@EmailServer.#"
+	}
+}

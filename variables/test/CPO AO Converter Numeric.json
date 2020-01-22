@@ -1,0 +1,17 @@
+{
+   "660dd3c1-77ad-408e-ab30-423800f67571": {
+      "id": "",
+      "properties": {
+         "description": "CPO AO Converter Numeric",
+         "is_required": false,
+         "name": "CPO AO Converter Numeric",
+         "scope": "global",
+         "value": 100
+      },
+      "ref_type": "variable",
+      "schema_id": "",
+      "tap_id": "660dd3c1-77ad-408e-ab30-423800f67571",
+      "title": "CPO AO Converter Numeric",
+      "type": "datatype.integer"
+   }
+}

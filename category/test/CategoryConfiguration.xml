@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<CategoryConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:space="preserve">
+  <Id>2cc638a8-d56b-4f82-8276-769062757e1e</Id>
+  <DisplayName>CPO AO Converter</DisplayName>
+  <Description>Cpo to ao converter tool</Description>
+  <VersionNumber>-1</VersionNumber>
+  <CreatedTime>2019-07-24T06:03:46.0442503Z</CreatedTime>
+  <ModifiedTime>2019-08-19T10:43:51.2009157Z</ModifiedTime>
+  <SubCategories />
+</CategoryConfiguration>

@@ -1,0 +1,6 @@
+{
+    "input_type": "[Util.lcase('@ParameterType.#')]",
+    "input_value_type": "[Util.lcase('@ParameterValueType.#')]",
+    "input_name": "@ParameterName.#",
+    "value_data": "@ParameterValue.#"
+}

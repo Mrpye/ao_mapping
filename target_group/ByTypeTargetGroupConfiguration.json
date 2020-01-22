@@ -1,0 +1,16 @@
+{
+   "name": "@DisplayName.#",
+   "title": "@DisplayName.#",
+   "type": "generic.target_group",
+   "tap_id": "@Id.#",
+   "id": "",
+   "ref_type": "targetgroup",
+   "schema_id": "",
+    "targets":[
+       {
+          "include_all_targets":false,
+          "view_target_type":"",
+          "criteria": "@TargetCriteria.ConditionDefinition.#{oa}"
+       }
+    ]
+ }

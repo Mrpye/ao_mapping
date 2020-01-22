@@ -1,0 +1,35 @@
+{
+  "action": [
+    {
+      "previous_action": {
+        "id": "[Util.build_ref(Util.prev_tap_id)]",
+        "tap_id": "[Util.prev_tap_id]",
+        "schema_id": "",
+        "type": "[Util.prev_type]",
+        "base_type": "[Util.prev_base_type]"
+      },
+      "action": {
+        "id": "",
+        "tap_id": "@Id.#",
+        "ref_type": "action",
+        "schema_id": "",
+        "type": "corejava.read_table_from_json",
+        "base_type": "activity",
+        "name": "@DisplayName.#",
+        "title": "@DisplayName.#",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "skip_execution": false,
+          "description": "This activity works differently from CPO In CPO you specify a table but AO it builds a table /root/row is defaulted xmlpath \n You will have to remap the uot puts",
+          "display_name": "@DisplayName.#",
+          "input_json": "[Util.fix_json('@Configuration.JsonString.#')]",
+          "persist_output": "['true' if '@Configuration.xml:space.#' =='preserve' else 'false']{b}",
+          "populate_columns": false,
+          "jsonpath_query": "$.",
+          "table_columns":"@Configuration.Columns.BuiltinTableColumn.#{am}"
+        }
+      }
+    }
+  ]
+}

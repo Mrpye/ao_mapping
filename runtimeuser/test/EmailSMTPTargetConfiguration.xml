@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<RuntimeUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="EmailSMTPTargetConfiguration" xml:space="preserve">
+  <Id>bb780c73-ddd1-40de-907a-86e7584fa118</Id>
+  <DisplayName>AO_Target_SMTP</DisplayName>
+  <CreatedTime>2019-12-03T11:24:46.1432747Z</CreatedTime>
+  <ModifiedTime>2019-12-03T11:24:46.1432747Z</ModifiedTime>
+  <EncryptedPassword>
+    <EncryptedForm />
+  </EncryptedPassword>
+</RuntimeUserConfiguration>

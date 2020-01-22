@@ -1,0 +1,38 @@
+{
+    "action": [
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.prev_tap_id)]",
+                "tap_id": "[Util.prev_tap_id]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "id": "",
+                "tap_id": "@Id.#",
+                "ref_type": "action",
+                "schema_id": "",
+                "type": "core.splitstring",
+                "base_type": "activity",
+                "name": "@DisplayName.#",
+                "properties": {
+                    "continue_on_failure": false,
+                    "skip_execution": false,
+                    "display_name": "@DisplayName.#",
+                    "input_string":"@Configuration.InputString.#",
+                    "boundaries":"[Util.rt('t_boundary','@Configuration.['CharDelimiters' if [Util.bool_fix('@Configuration.IsCharDelimiter.#')]==[Util.bool_fix('true')] else 'StringDelimiters'].#')]{a}"
+                },
+                "title": "@DisplayName.#"
+            }
+        }
+    ],
+    "output": [
+        {
+            "Response": "response_body"
+        },
+        {
+            "StatusCode": "status_code"
+        }
+    ]
+}

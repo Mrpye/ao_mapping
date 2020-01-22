@@ -1,0 +1,14 @@
+ {
+    "id": "",
+    "tap_id":"@Id.#",
+    "schema_id":"",
+    "ref_type":"data_table",
+    "title":"@DisplayName.#",
+    "properties":{
+      "scope":"[Util.get_scope('@Scope.Family.#')]",
+       "value":"@FixedSchemaDataTable.Row.#{am'TableVariableData'}",
+       "name":"@DisplayName.#",
+       "description":"@DisplayName.#"
+    }
+ }
+

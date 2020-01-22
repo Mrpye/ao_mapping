@@ -1,0 +1,29 @@
+{
+    "action": [
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.prev_tap_id)]",
+                "tap_id": "[Util.prev_tap_id]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "id": "",
+                "tap_id": "@Id.#",
+                "ref_type": "action",
+                "schema_id": "",
+                "type": "core.xml2json",
+                "base_type": "activity",
+                "name": "@DisplayName.#",
+                "title": "@DisplayName.#",
+                "properties": {
+                    "continue_on_failure": false,
+                    "format_string": "",
+                    "input_xml": "@Configuration.SourceText.#",
+                    "skip_execution": false
+                }
+            }
+        }
+    ]
+}

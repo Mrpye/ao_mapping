@@ -1,0 +1,17 @@
+{
+    "3dca7a2e-ba42-461b-a135-d27e7d1c4fda":{
+       "id":"",
+       "name":"metsilabs.local\\brettp",
+       "properties":{
+          "description":"metsilabs.local\\brettp",
+          "display_name":"metsilabs.local\\brettp",
+          "password":"password",
+          "username":"admin"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"3dca7a2e-ba42-461b-a135-d27e7d1c4fda",
+       "title":"metsilabs.local\\brettp",
+       "type":"runtime_user.windows_credentials"
+    }
+ }

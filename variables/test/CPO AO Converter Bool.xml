@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<VariableConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BooleanVariableConfiguration" xml:space="preserve">
+  <Id>fda61507-8a8d-4dba-8c8c-27a71c9b6f20</Id>
+  <DisplayName>CPO AO Converter Bool</DisplayName>
+  <CreatedTime>2019-11-18T12:29:50.9621678Z</CreatedTime>
+  <ModifiedTime>2019-11-18T12:29:50.9621678Z</ModifiedTime>
+  <Owner xsi:type="SidIdentity">
+    <SecurityIdentifier>S-1-5-21-3759644977-3235991343-3753310481-500</SecurityIdentifier>
+  </Owner>
+  <boolean>false</boolean>
+  <Scope>
+    <Family>Global</Family>
+    <ControllingItemId>00000000-0000-0000-0000-000000000000</ControllingItemId>
+  </Scope>
+  <VariableTypeId>02898bc5-5b13-74d1-53a1-0a5ff4c3ffcb</VariableTypeId>
+  <CustomPropertiesString />
+</VariableConfiguration>

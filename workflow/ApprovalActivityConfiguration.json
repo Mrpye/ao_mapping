@@ -1,0 +1,57 @@
+{
+	"action": [
+		{
+			"previous_action": {
+				"id": "[Util.build_ref(Util.prev_tap_id)]",
+				"tap_id": "[Util.prev_tap_id]",
+				"schema_id": "",
+				"type": "[Util.prev_type]",
+				"base_type": "[Util.prev_base_type]"
+			},
+			"action": {
+				"id": "",
+				"tap_id": "@Id.#",
+				"ref_type": "action",
+				"schema_id": "",
+				"type": "task.approval_request",
+				"base_type": "activity",
+				"name": "@DisplayName.#",
+				"title": "@DisplayName.#",
+				"properties": {
+					"skip_execution": false,
+					"description": "@DisplayName.#",
+					"continue_on_failure": false,
+					"display_name": "@DisplayName.#",
+					"due_date": {
+						"is_relative_time": true,
+						"is_specified_date": false,
+						"relative_time": {
+							"duration": "@Configuration.TaskDueWithinPeriod.Period.HardcodedValue.#{i}",
+							"time_units": "@Configuration.TaskDueWithinPeriod.Period.DisplayUnits.#"
+						},
+						"set_due_date": true
+					},
+					"approval_choices": "@Configuration.SubstitutableApprovalChoices.SubstitutableString.#{vam''taskData'}",
+					"expiration_date": {
+						"is_relative_time": true,
+						"is_specified_date": false,
+						"relative_time": {
+							"duration": "@Configuration.TaskExpiresPeriod.Period.HardcodedValue.#{i}",
+							"time_units": "@Configuration.TaskExpiresPeriod.Period.DisplayUnits.#"
+						}
+					},
+					"expiration_status": "Expired",
+					"minimum_approvals": 2,
+					"task_requestor": "",
+					"task_owner": "@Configuration.TaskOwner.#",
+					"assignees": [
+						"test"
+					],
+					"priority": "[Util.lcase('@Configuration.TaskPriority.#')]",
+					"subject_line": " ",
+					"task_message": "@Configuration.Message.#"
+				}
+			}
+		}
+	]
+}

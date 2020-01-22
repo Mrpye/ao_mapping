@@ -1,0 +1,28 @@
+{
+    "action": [
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.prev_tap_id,'id')]",
+                "tap_id": "[Util.prev_tap_id]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "id": "",
+                "schema_id": "",
+                "tap_id": "@Id.#",
+                "ref_type": "logic",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "name": "@CompletedType.#",
+                "properties": {
+                    "completion_type": "[Util.lookup_status('@CompletedType.#')]",
+                    "display_name": "@CompletedType.#"
+                },
+                "title": "@CompletedType.#"
+            }
+        }
+    ],
+    "output": []
+}

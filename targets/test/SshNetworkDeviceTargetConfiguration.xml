@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<TargetConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SshNetworkDeviceTargetConfiguration" xml:space="preserve">
+  <Id>53044503-1079-4117-a6af-3a0d1ff4af40</Id>
+  <DisplayName>Ubuntu</DisplayName>
+  <VersionNumber>3</VersionNumber>
+  <CreatedTime>2018-10-12T14:40:17.0855305Z</CreatedTime>
+  <ModifiedTime>2018-10-16T10:22:02.273032Z</ModifiedTime>
+  <Owner xsi:type="SidIdentity">
+    <SecurityIdentifier>S-1-5-21-1929671442-928741861-2156004167-500</SecurityIdentifier>
+  </Owner>
+  <DefaultRuntimeUserId>7b2d0edd-6bc4-4172-91b0-6e6934a88729</DefaultRuntimeUserId>
+  <TypeExtensionId>894a628d-df98-a8bb-c9e3-4318f10b3835</TypeExtensionId>
+  <PromptPrefix />
+  <DeviceType>GENERIC_NETWORK_DEVICE</DeviceType>
+  <SessionResourceId>4584d78e-36d8-45dc-8a6d-336657c7939a</SessionResourceId>
+  <SessionResource xml:space="preserve">
+    <Id>4584d78e-36d8-45dc-8a6d-336657c7939a</Id>
+    <DisplayName>Ubuntu Session Resource</DisplayName>
+    <CreatedTime>2018-10-12T14:40:17.1011538Z</CreatedTime>
+    <CreatedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-1929671442-928741861-2156004167-500</SecurityIdentifier>
+    </CreatedBy>
+    <ModifiedTime>2018-10-12T14:40:17.1011538Z</ModifiedTime>
+    <ModifiedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-1929671442-928741861-2156004167-500</SecurityIdentifier>
+    </ModifiedBy>
+    <Owner xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-1929671442-928741861-2156004167-500</SecurityIdentifier>
+    </Owner>
+  </SessionResource>
+  <SessionConstraint xml:space="preserve">
+    <Id>59812b92-db36-4ed7-add3-abc48247fc28</Id>
+    <DisplayName>Ubuntu Session Resource Constraint</DisplayName>
+    <VersionNumber>-1</VersionNumber>
+    <CreatedTime>2018-10-12T14:40:17.1167776Z</CreatedTime>
+    <CreatedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-1929671442-928741861-2156004167-500</SecurityIdentifier>
+    </CreatedBy>
+    <ModifiedTime>2018-10-12T14:40:28.6881467Z</ModifiedTime>
+    <ModifiedBy xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-1929671442-928741861-2156004167-500</SecurityIdentifier>
+    </ModifiedBy>
+    <Owner xsi:type="SidIdentity">
+      <SecurityIdentifier>S-1-5-21-1929671442-928741861-2156004167-500</SecurityIdentifier>
+    </Owner>
+    <ResourceId>4584d78e-36d8-45dc-8a6d-336657c7939a</ResourceId>
+    <Scope>
+      <Family>Target</Family>
+      <ControllingItemId>53044503-1079-4117-a6af-3a0d1ff4af40</ControllingItemId>
+    </Scope>
+    <Quantity>1</Quantity>
+  </SessionConstraint>
+  <MaxIdleTimePeriod>
+    <DisplayUnits>Minutes</DisplayUnits>
+    <Period>
+      <HardcodedValue>5</HardcodedValue>
+    </Period>
+  </MaxIdleTimePeriod>
+  <ConnectionTimeOut>108</ConnectionTimeOut>
+  <LoginExpectList />
+  <ElevatingPrivilegeExpectList />
+  <DeviceTypeConfigurationId>4ba4d91b-91f8-409c-bf09-2b84f19575fe</DeviceTypeConfigurationId>
+  <PromptExpectPattern>
+    <FormattedCode>^{0}.*\$</FormattedCode>
+    <References>
+      <VariableReference xsi:type="PropertyReference">
+        <DisplayPath>Target.Prompt Prefix</DisplayPath>
+        <LinkChain>
+          <Link xsi:type="PropertyNameLink">
+            <PropertyName>PromptPrefix</PropertyName>
+          </Link>
+        </LinkChain>
+        <ObjectType>Target</ObjectType>
+      </VariableReference>
+    </References>
+  </PromptExpectPattern>
+  <ErrorExpectPattern>
+    <HardcodedValue />
+  </ErrorExpectPattern>
+  <AdminPromptExpectPattern>
+    <FormattedCode>^{0}.*#</FormattedCode>
+    <References>
+      <VariableReference xsi:type="PropertyReference">
+        <DisplayPath>Target.Prompt Prefix</DisplayPath>
+        <LinkChain>
+          <Link xsi:type="PropertyNameLink">
+            <PropertyName>PromptPrefix</PropertyName>
+          </Link>
+        </LinkChain>
+        <ObjectType>Target</ObjectType>
+      </VariableReference>
+    </References>
+  </AdminPromptExpectPattern>
+  <SshHost>192.168.9.152</SshHost>
+  <SshPort>22</SshPort>
+  <Protocol>SSH</Protocol>
+  <SftpEnabled>true</SftpEnabled>
+  <ScpEnabled>true</ScpEnabled>
+  <UseHostBasedAuthentication>false</UseHostBasedAuthentication>
+  <UseDefaultHostKey>true</UseDefaultHostKey>
+  <NetworkModuleIds />
+</TargetConfiguration>

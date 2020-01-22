@@ -1,0 +1,17 @@
+{
+    "07d377ba-b40c-4b6d-b674-ad02b48723cc":{
+       "id":"",
+       "name":"AO_Target_IMAP",
+       "properties":{
+          "description":"AO_Target_IMAP",
+          "display_name":"AO_Target_IMAP",
+          "password":"password",
+          "sender":"email@test.co.uk"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"07d377ba-b40c-4b6d-b674-ad02b48723cc",
+       "title":"AO_Target_IMAP",
+       "type":"runtime_user.email_credentials"
+    }
+ }

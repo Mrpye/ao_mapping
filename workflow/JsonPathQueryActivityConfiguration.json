@@ -1,0 +1,38 @@
+{
+    "action": [
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.prev_tap_id)]",
+                "tap_id": "[Util.prev_tap_id]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "workflow"
+            },
+            "action": {
+                "id": "",
+                "schema_id": "",
+                "tap_id": "@Id.#",
+                "type": "corejava.jsonpathquery",
+                "base_type": "activity",
+                "name": "@DisplayName.#",
+                "properties": {
+                    "action_timeout": 180,
+                    "continue_on_failure": false,
+                    "skip_execution": false,
+                    "display_name": "@DisplayName.#",
+                    "input_json": "@Configuration.SourceJson.#",
+                    "jsonpath_queries":"@Configuration.Queries.JsonPathQueryDefinition.#{am}"
+                },
+                "title": "@DisplayName.#"
+            }
+        }
+    ],
+    "output": [
+        {
+            "Response": "response_body"
+        },
+        {
+            "StatusCode": "status_code"
+        }
+    ]
+}

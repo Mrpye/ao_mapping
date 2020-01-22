@@ -1,0 +1,17 @@
+{
+    "bb780c73-ddd1-40de-907a-86e7584fa118":{
+       "id":"",
+       "name":"AO_Target_SMTP",
+       "properties":{
+          "description":"AO_Target_SMTP",
+          "display_name":"AO_Target_SMTP",
+          "password":"password",
+          "sender":"email@test.co.uk"
+       },
+       "ref_type":"target",
+       "schema_id":"",
+       "tap_id":"bb780c73-ddd1-40de-907a-86e7584fa118",
+       "title":"AO_Target_SMTP",
+       "type":"runtime_user.email_credentials"
+    }
+ }

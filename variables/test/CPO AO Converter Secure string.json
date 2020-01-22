@@ -1,0 +1,18 @@
+{
+   "b495028c-adfe-4319-a176-41b66543c1c8": {
+      "id": "",
+      "properties": {
+         "description": "",
+         "is_required": false,
+         "name": "CPO AO Converter Secure string",
+         "scope": "global",
+         "value": ""
+      },
+      "ref_type": "variable",
+      "schema_id": "",
+      "tap_id": "b495028c-adfe-4319-a176-41b66543c1c8",
+      "title": "CPO AO Converter Secure string",
+      "type": "datatype.secure_string"
+   }
+}
+
