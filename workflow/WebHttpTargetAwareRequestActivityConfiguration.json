@@ -44,7 +44,7 @@
                         "allow_auto_redirect": "@Configuration.AllowAutoRedirect.#{b}",
                         "content_type": "[Util.trim(Util.clean('@Configuration.ContentType.#','charset=utf-8',';'))]",
                         "continue_on_error_status_code": true,
-                        "continue_on_failure": true,
+                        "continue_on_failure": false,
                         "cookie": [],
                         "custom_headers": "@Configuration.Headers.Header.#{am}",
                         "description": "@DisplayName.#",
