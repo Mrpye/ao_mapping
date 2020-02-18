@@ -18,7 +18,7 @@
         "name": "@DisplayName.#",
         "title": "@DisplayName.#",
         "properties": {
-          "action_timeout": "[Util.fix_interval('@Configuration.CommandTimeout.Period.#','@Configuration.CommandTimeout.DisplayUnits.#')]{i}",
+          "action_timeout": "[Util.fix_interval_sec('@Configuration.CommandTimeout.Period.#','@Configuration.CommandTimeout.DisplayUnits.#')]{i}",
           "continue_on_failure": false,
           "skip_execution": false,
           "display_name": "@DisplayName.#",

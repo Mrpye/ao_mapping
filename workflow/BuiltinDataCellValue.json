@@ -6,7 +6,7 @@
                 {
                     "test": "['@Value.xsi:type.#'=='SubstitutableString']",
                     "payload": {
-                        "key": "@ColumnName.#",
+                        "key": "[Util.clean('@ColumnName.#',' ')]",
                         "type": "[Util.get_datatype('@Value.xsi:type.#')]",
                         "value": "@Value.#"
                     }
@@ -14,9 +14,17 @@
                 {
                     "test": "['@Value.xsi:type.#'=='SubstitutableNumber']",
                     "payload": {
-                        "key": "@ColumnName.#",
+                        "key": "[Util.clean('@ColumnName.#',' ')]",
                         "type": "[Util.get_datatype('@Value.xsi:type.#')]",
                         "value": "@Value.#{i}"
+                    }
+                },
+                {
+                    "test": "[1==1]",
+                    "payload": {
+                        "key": "[Util.clean('@ColumnName.#',' ')]",
+                        "type": "[Util.get_datatype('@Value.xsi:type.#')]",
+                        "value": "@Value.#"
                     }
                 }
             ]

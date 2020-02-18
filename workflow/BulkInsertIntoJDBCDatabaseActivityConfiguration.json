@@ -18,7 +18,7 @@
         "name": "@DisplayName.#",
         "title": "@DisplayName.#",
         "properties": {
-          "action_timeout": "[Util.fix_interval('@Configuration.AHFDelay.Period.#','@Configuration.AHFDelay.DisplayUnits.#')]{i}",
+          "action_timeout": "[Util.fix_interval_sec('@Configuration.AHFDelay.Period.#','@Configuration.AHFDelay.DisplayUnits.#')]{i}",
           "continue_on_failure": false,
           "skip_execution": false,
           "display_name": "@DisplayName.#",

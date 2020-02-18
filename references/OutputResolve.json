@@ -4,9 +4,10 @@
       "EndTime": "output.end_time",
       "ResultTable.FirstRow.Value": "output.parts[0]",
       "ResultTable.LastRow.Value": "output.parts[-1]",
+      "ResultTable.TIARows": "output.parts",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "web-service.http_request": {
       "Response": "output.response_body",
@@ -16,7 +17,7 @@
       "Xstart_time": "output.start_time",
       "XStatusDescription": "output.status_text",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "Cookies": "output.cookie",
       "Cookies.LastRow.Value": "output.cookie[-1]",
       "Cookies.FirstRow.Value": "output.cookie[0]",
@@ -27,15 +28,17 @@
       "ResponseHeaders.FirstRow.Name": "output.response_headers[-1].name"
    },
    "corejava.jsonpathquery": {
-      "Results.?": "output.jsonpath_queries.?"
+      "Results.?": "output.jsonpath_queries.?",
+      "InstanceFailed":"!output.succeeded"
    },
    "core.format_date": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "FormatResult": "output.result",
+      "DateTimeResult": "output.result",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.calculate_date_time_difference": {
       "Days": "output.days",
@@ -47,12 +50,13 @@
       "Seconds": "output.seconds",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "TotalDays": "output.total_days",
       "TotalHours": "output.total_hours",
       "TotalMilliseconds": "output.total_milliseconds",
       "TotalMinutes": "output.total_minutes",
-      "TotalSeconds": "output.total_seconds"
+      "TotalSeconds": "output.total_seconds",
+      "DateTimeResult": "output.result"
    },
    "amqp.bind_queue": {
       "XelapsedTime": "output.elapsed_time",
@@ -62,7 +66,7 @@
       "--Routing": "output.routing",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "amqp.declare_exchange": {
       "XelapsedTime": "output.elapsed_time",
@@ -70,7 +74,7 @@
       "--ExchangeName": "output.exchange_name",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "amqp.declare_queue": {
       "XelapsedTime": "output.elapsed_time",
@@ -78,7 +82,7 @@
       "QueueName": "output.queue_name",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "amqp.get_message": {
       "XelapsedTime": "output.elapsed_time",
@@ -107,7 +111,7 @@
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.api_request": {
       "XelapsedTime": "output.elapsed_time",
@@ -115,7 +119,7 @@
       "ResponseBody": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.associate_subnet_with_route_table": {
       "AssociationId": "output.association_id",
@@ -123,21 +127,21 @@
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.attach_internet_gateway": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.authorize_security_group": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.create_account": {
       "XelapsedTime": "output.elapsed_time",
@@ -146,7 +150,7 @@
       "XstartTime": "output.start_time",
       "State": "output.state",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.create_ec2": {
       "XelapsedTime": "output.elapsed_time",
@@ -161,7 +165,7 @@
       "Instances.LastRow.public_ip_address": "output.instances[-1].public_ip_address",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.create_internet_gateway": {
       "XelapsedTime": "output.elapsed_time",
@@ -169,7 +173,7 @@
       "InternetGatewayId": "output.internet_gateway_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.create_keypair": {
       "XelapsedTime": "output.elapsed_time",
@@ -178,7 +182,7 @@
       "PrivateKey": "output.private_key",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.create_route": {
       "CreateSucceed": "output.create_succeed",
@@ -186,7 +190,7 @@
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.create_route_table": {
       "XelapsedTime": "output.elapsed_time",
@@ -194,7 +198,7 @@
       "RouteTableId": "output.route_table_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "VpcId": "output.vpc_id"
    },
    "--aws.create_security_group": {
@@ -203,7 +207,7 @@
       "SecurityGroupId": "output.security_group_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.create_subnet_vpc": {
       "XelapsedTime": "output.elapsed_time",
@@ -212,7 +216,7 @@
       "State": "output.state",
       "SubnetId": "output.subnet_id",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "VpcId": "output.vpc_id"
    },
    "--aws.create_vpc": {
@@ -222,7 +226,7 @@
       "XstartTime": "output.start_time",
       "State": "output.state",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "VpcId": "output.vpc_id"
    },
    "--aws.delete_keypair": {
@@ -230,14 +234,14 @@
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.delete_security_group": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.describe_route_tables": {
       "XelapsedTime": "output.elapsed_time",
@@ -248,7 +252,7 @@
       "RouteTables.LastRow.vpc_id": "output.route_tables[-1].vpc_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.describe_security_group": {
       "XelapsedTime": "output.elapsed_time",
@@ -274,7 +278,7 @@
       "SecurityGroupName": "output.security_group_name",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "VpcId": "output.vpc_id"
    },
    "--aws.describe_subnets": {
@@ -288,14 +292,14 @@
       "Subnets.FirstRow.vpc_id": "output.subnets[0].vpc_id",
       "Subnets.LastRow.vpc_id": "output.subnets[-1].vpc_id",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.describe_vpcs": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "Vpcs.FirstRow.cidr_block": "output.vpcs[0].cidr_block",
       "Vpcs.LastRow.cidr_block": "output.vpcs[-1].cidr_block",
       "Vpcs.FirstRow.state": "output.vpcs[0].state",
@@ -308,14 +312,14 @@
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.iam_attach_user_policy": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.iam_create_access_key": {
       "AccessKeyId": "output.access_key_id",
@@ -325,7 +329,7 @@
       "XstartTime": "output.start_time",
       "Status": "output.status",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "Username": "output.username"
    },
    "--aws.iam_create_user": {
@@ -336,7 +340,7 @@
       "Path": "output.path",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "Username": "output.username"
    },
    "--aws.iam_list_policies": {
@@ -360,14 +364,14 @@
       "Policies.LastRow.update_date": "output.policies[-1].update_date",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.iam_list_user": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "UserIds.FirstRow.arn": "output.user_ids[0].arn",
       "UserIds.LastRow.arn": "output.user_ids[-1].arn",
       "UserIds.FirstRow.creation_date": "output.user_ids[0].creation_date",
@@ -385,7 +389,7 @@
       "KeypairName": "output.keypair_name",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.list_create_account_status": {
       "CreateAccountStatuses.FirstRow.account_id": "output.create_account_statuses[0].account_id",
@@ -404,21 +408,21 @@
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.reboot_ec2": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.revoke_security_group": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.start_ec2": {
       "XelapsedTime": "output.elapsed_time",
@@ -429,7 +433,7 @@
       "Instances.LastRow.instance_id": "output.instances[-1].instance_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.stop_ec2": {
       "XelapsedTime": "output.elapsed_time",
@@ -440,7 +444,7 @@
       "Instances.LastRow.instance_id": "output.instances[-1].instance_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--aws.terminate_ec2": {
       "XelapsedTime": "output.elapsed_time",
@@ -451,7 +455,7 @@
       "Instances.LastRow.instance_id": "output.instances[-1].instance_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.add_billing_unit_to_cost_group": {
       "XelapsedTime": "output.elapsed_time",
@@ -459,7 +463,7 @@
       "ResponseBody": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.add_cloud_account": {
       "AccountId": "output.account_id",
@@ -467,7 +471,7 @@
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.api_request": {
       "XelapsedTime": "output.elapsed_time",
@@ -475,14 +479,14 @@
       "ResponseBody": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.associate_cost_group": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.billing_unit": {
       "XelapsedTime": "output.elapsed_time",
@@ -490,7 +494,7 @@
       "Id": "output.id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.create_cost_group": {
       "XelapsedTime": "output.elapsed_time",
@@ -498,7 +502,7 @@
       "Id": "output.id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.delete_cloud_account": {
       "XelapsedTime": "output.elapsed_time",
@@ -506,7 +510,7 @@
       "ResponseBody": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.delete_cost_group": {
       "XelapsedTime": "output.elapsed_time",
@@ -514,7 +518,7 @@
       "ResponseBody": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.get_cloud_context": {
       "ActionType": "output.action_type",
@@ -537,7 +541,7 @@
       "ServiceOwnerId": "output.service_owner_id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "VmHostname": "output.vm_hostname",
       "VmId": "output.vm_id",
       "VmOwnerId": "output.vm_owner_id",
@@ -549,7 +553,7 @@
       "Id": "output.id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.get_cost_groups": {
       "XelapsedTime": "output.elapsed_time",
@@ -557,21 +561,21 @@
       "Id": "output.id",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.manage_deployment_environment": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "--ccs.update_cost_group": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.addrowtotable": {
       "XelapsedTime": "output.elapsed_time",
@@ -579,7 +583,8 @@
       "RowIndex": "output.row_count",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded",
+      "ResultTable.RowCount":"output.row_count"
    },
    "core.calculate_date": {
       "XelapsedTime": "output.elapsed_time",
@@ -587,7 +592,7 @@
       "Result": "output.result",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.deleterowfromtable": {
       "XelapsedTime": "output.elapsed_time",
@@ -595,7 +600,8 @@
       "RowCount": "output.row_count",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded",
+      "ResultTable.RowCount":"output.row_count"
    },
    "--core.escape_regex": {
       "XelapsedTime": "output.elapsed_time",
@@ -603,7 +609,7 @@
       "Escaped": "output.escaped",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.find_string": {
       "XelapsedTime": "output.elapsed_time",
@@ -615,7 +621,7 @@
       "--Matches.LastRow.end": "output.matches[-1].end",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.json2xml": {
       "XelapsedTime": "output.elapsed_time",
@@ -623,7 +629,7 @@
       "Output": "output.output_xml",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.matchregex": {
       "XelapsedTime": "output.elapsed_time",
@@ -634,15 +640,17 @@
       "AllMatchesTable.LastRow.Value": "output.matching_strings[-1]",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.parse_date": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "DateTimeResult.UniversalTimeString": "output.result",
       "XstartTime": "output.start_time",
+      "DateTimeResult": "output.result",
+      "Result": "output.result",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.read_table_from_text": {
       "XelapsedTime": "output.elapsed_time",
@@ -652,7 +660,8 @@
       "ResultTable": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded",
+      "ResultTable.RowCount":"output.row_count"
    },
    "core.replacestring": {
       "XelapsedTime": "output.elapsed_time",
@@ -660,7 +669,7 @@
       "Result": "output.result_string",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.selectfromtable": {
       "XelapsedTime": "output.elapsed_time",
@@ -671,21 +680,22 @@
       "RowCount": "output.row_count",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded",
+      "ResultTable.RowCount":"output.row_count"
    },
    "core.set_multiple_variables": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.sleep": {
       "ResolvedDefinition.Seconds": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.string2lower": {
       "XelapsedTime": "output.elapsed_time",
@@ -693,14 +703,14 @@
       "Result": "output.lowercase_text",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.string2upper": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "Result": "output.uppercase_text"
    },
    "core.substring": {
@@ -709,14 +719,14 @@
       "XstartTime": "output.start_time",
       "Result": "output.substring",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.trim_string": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "Result": "output.trimmed"
    },
    "core.updaterowintable": {
@@ -725,7 +735,8 @@
       "RowsUpdated": "output.row_count",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded",
+      "ResultTable.RowCount":"output.row_count"
    },
    "core.xml2json": {
       "XelapsedTime": "output.elapsed_time",
@@ -733,14 +744,14 @@
       "Output": "output.output_json",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.xpathquery": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
       "Results.?": "output.xpath_queries.?"
    },
    "core.xsl_transform": {
@@ -749,85 +760,89 @@
       "Output": "output.output_document",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "email.smtp_send_email": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.break": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.condition_block": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.continue": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
+   },
+   "corejava.read_table_from_xml":{
+      "ResultTable.TIARows":"output.read_table_from_xml"
    },
    "logic.for_each": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded",
-      "?": "input.source_array|[@|].?"
+      "InstanceFailed": "!output.succeeded",
+      "Value": "input.source_array[@]",
+      "?": "input.source_array[@].?"
    },
    "logic.group": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.if_else": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.parallel": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.parallel_block": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.start_point": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "logic.while": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "windows.control_windows_service": {
       "XelapsedTime": "output.elapsed_time",
@@ -835,7 +850,7 @@
       "--": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "windows.copy_folder": {
       "XelapsedTime": "output.elapsed_time",
@@ -843,7 +858,7 @@
       "ResponseBody": "output.response_body",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "windows.correlate_windows_events": {
       "XelapsedTime": "output.elapsed_time",
@@ -860,7 +875,7 @@
       "ResponseBody.LastRow.TimeGenerated": "output.response_body[-1].TimeGenerated",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "amqp.event": {
       "ContentHeaders.AppId": "output.app_id",
@@ -1114,5 +1129,17 @@
       "Host": "input.host",
       "Port": "input.port",
       "Protocol": "input.protocol"
+   },
+   "NSLookup.workflow.sub_workflow":{
+      "468f501b-aede-4ff6-99c7-b6b95608dbfd": "$var_generic_varref_NSLookup.output.Output$"
+   },
+   "GenericActivity.workflow.sub_workflow":{
+      "Hosts.FirstRow.?": "$var_generic_varref_GenericActivity.output.OutputNameList$[0].?"
+   },
+   "CPO AO Child Workflow_v2.workflow.sub_workflow":{
+      "d631d14f-0953-44a5-8a21-8e37f2feb0eb": "$var_generic_varref_CPO AO Child Workflow_v2.output.output$"
    }
+
+
+   
 }

@@ -18,7 +18,6 @@
           "name": "@DisplayName.#",
           "properties": {
             "continue_on_failure": false,
-            "format_string": "{i}",
             "original_date": "@Configuration.SourceDateTime.#",
             "skip_execution": false,
             "use_custom_format": true,

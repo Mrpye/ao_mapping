@@ -20,7 +20,7 @@
                     "continue_on_failure": false,
                     "skip_execution": false,
                     "display_name": "@DisplayName.#",
-                    "input_json": "@Configuration.SourceJson.#",
+                    "input_json": "[Util.fix_json('@Configuration.SourceJson.#')]",
                     "jsonpath_queries":"@Configuration.Queries.JsonPathQueryDefinition.#{am}"
                 },
                 "title": "@DisplayName.#"

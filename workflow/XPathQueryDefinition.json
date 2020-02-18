@@ -1,5 +1,6 @@
 {
-    "xpath_query_type": "[Util.lcase('@ReturnType.#')]",
+    "xpath_query_type": "[Util.get_datatype('@ReturnType.#')]",
     "xpath_query": "@Query.#",
-    "xpath_query_name": "@DisplayName.#"
+    "xpath_query_name": "@DisplayName.#",
+    "xpath_query_type_format": "['02-01-2006' if '@ReturnType.#'=='DateTime' else '']{!}"
   }

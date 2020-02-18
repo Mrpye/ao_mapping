@@ -8,7 +8,7 @@
 	"schema_id": "",
 	"properties": {
 		"ignore_certificate_errors": "@IgnoreCertificateError.#{b}",
-		"polling_interval": "[Util.fix_interval('@ReconnectInterval.Milliseconds.#','@ReconnectInterval.Units.#')]{i}",
+		"polling_interval": "[Util.fix_interval_ms('@ReconnectInterval.Milliseconds.#','@ReconnectInterval.Units.#')]{i}",
 		"port": "@Port.#{i}",
 		"protocol": "@ProtocolEnum.#",
 		"tls_enabled": "@EnableSSL.#{b}",

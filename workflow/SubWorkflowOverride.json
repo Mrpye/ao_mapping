@@ -9,20 +9,21 @@
                 "base_type": "[Util.prev_base_type]"
             },
             "action": {
+                "custom_mapping": true,
+                "custom_mapping_name": "@DisplayName.#_v2",
+                "is_atomic": false,
                 "id": "",
                 "tap_id": "@Id.#",
                 "ref_type": "action",
                 "schema_id": "",
-                "type": "core.parse_date",
-                "base_type": "activity",
+                "type": "workflow.sub_workflow",
+                "base_type": "subworkflow",
                 "name": "@DisplayName.#",
-                "title": "@DisplayName.#",
+                "title": "Demo for mapping to custom workflow",
                 "properties": {
-                    "continue_on_failure": false,
-                    "skip_execution": false,
-                    "input_string": "@Configuration.InputString.#",
-                    "use_custom_format": true,
-                    "custom_format": "[Util.date_format('@Configuration.FormatString.#')]"
+                    "display_name": "@DisplayName.#",
+                    "workflow_id": "[Util.Lookup_Workflow_Id_by_Name('@DisplayName.#_v2')]",
+                    "input": "@InputVariableTable.VariableAssignmentsAsArray.InputVariableAssignment.#{km}"
                 }
             }
         }

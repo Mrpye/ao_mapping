@@ -1,0 +1,6 @@
+{
+    "type":"ProcessOutputVariableLink",
+    "activity_id":"[Util.build_ref('@LaunchingActivityId.#','id')]",
+    "activity_type":"[Util.build_ref('@LaunchingActivityId.#','type')]",
+    "variable_id":"@OutputVariableId.#"
+}

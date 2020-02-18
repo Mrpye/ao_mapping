@@ -57,10 +57,6 @@
             "map": "Columns"
         },
         {
-            "node_name": "InputVariableAssignment",
-            "map": "VariableAssignmentsAsArray"
-        },
-        {
             "node_name": "SubstitutableObject",
             "map": "Arguments"
         },
@@ -131,14 +127,25 @@
         {
             "node_name": "PropertyModification",
             "map": "Modifications"
+        },
+        {
+            "node_name": "VariableTypePropertyConfiguration",
+            "map": "TypeProperties"
         }
     ],
-    "process_lookup": {
+    "activity_lookup": {
         "61c01a32-66e3-4315-91c3-57b433379bac": "ActivityMicrosoftStopProcess",
         "8f001469-ca06-49a0-9e4c-fa38b71b44d6": "ActivityMicrosoftRestartServer",
         "a0324bf3-06d0-4651-b0b9-bfd7cbfcf340": "ActivityMicrosoftWinCopyFolder",
         "af281d69-6fb4-4b54-9e9f-440eb7c85d3f": "ActivityMicrosoftWinCreateFolder",
         "89810895-8fd2-4476-9223-32cc3d0ea192": "ActivityMicrosoftWinGetFolderProperties",
-        "877cdf40-12ab-40a1-839f-5da31ad43d51": "ActivityMicrosoftUninstallApp"
+        "877cdf40-12ab-40a1-839f-5da31ad43d51": "ActivityMicrosoftUninstallApp",
+        "70d3e6d8-c111-40df-978a-e47400237418": "NSLookup",
+        "aa6e95bd65-9e46-4fdb-b77d-bf7cc782f008": "aaSubWorkflowOverride"
+    },
+    "activity_input_lookup": {
+        "4c9e83ed-3bde-4018-a423-08e336cab843": "Destination",
+        "f5c336be-eb81-42c4-aff4-dd30f063107c": "Input 1",
+        "9b9da66a-775c-49b5-83a5-862a80e051f1": "Input 2"
     }
 }

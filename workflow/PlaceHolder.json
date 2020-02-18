@@ -20,7 +20,7 @@
                 "properties": {
                     "action_timeout": 180,
                     "continue_on_failure": false,
-                    "display_name": "Place Holder: @DisplayName.#",
+                    "display_name": "Place Holder: ['Missing Sub Workflow' if '@ProcessId.#' !='' else ''] @DisplayName.#",
                     "skip_execution": false,
                     "description": "",
                     "tap_data": "[Util.get_element()]",

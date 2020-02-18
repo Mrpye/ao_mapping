@@ -1,0 +1,11 @@
+{
+    "id":"",
+    "schema_id":"",
+    "tap_id":"@Id.#",
+    "type":"datatype.variabletype",
+    "ref_type":"variable_type",
+    "title":"@DisplayName.#",
+    "type_properties":"@TypeProperties.VariableTypePropertyConfiguration.#{am}",
+    "base_var_type":"@BaseVariableTypeId.#",
+    "creatable":"@Creatable.#"
+}

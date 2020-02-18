@@ -1,0 +1,46 @@
+{
+    "action": [
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.prev_tap_id)]",
+                "tap_id": "[Util.prev_tap_id]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "custom_mapping": true,
+                "custom_mapping_name": "GenericActivity",
+                "is_atomic": false,
+                "id": "",
+                "tap_id": "@Id.#",
+                "ref_type": "action",
+                "schema_id": "",
+                "type": "workflow.sub_workflow",
+                "base_type": "subworkflow",
+                "name": "@DisplayName.#",
+                "title": "@DisplayName.#",
+                "properties": {
+                    "display_name": "@DisplayName.#",
+                    "workflow_id": "[Util.Lookup_Workflow_Id_by_Name('GenericActivity')]",
+                    "input": {
+                        "InputString": "@Configuration.Host.#",
+                        "InputInteger": "@Configuration.TimeOutPeriod.Period.#",
+                        "InputBool": true,
+                        "InputDateTime": "2020-01-12",
+                        "InputSecureString": "test",
+                        "InputDecimal": 1.2,
+                        "InputGenericKeyPair": [
+                            {
+                                "column_data": {
+                                    "Key": "aa",
+                                    "Value": "aa"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

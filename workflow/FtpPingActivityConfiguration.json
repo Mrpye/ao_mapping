@@ -1,0 +1,157 @@
+{
+    "variables": [
+        {
+            "schema_id":"",
+            "tap_id":"[Util.get_guid('VARIABLE_ID1')]",
+            "type":"datatype.string",
+            "ref_type":"variable",
+            "title":"Temp Variable",
+            "properties": {
+                "scope": "local",
+                "is_required": false,
+                "name": "Temp Variable",
+                "description": "Temp Variable",
+                "value": "1"
+            }
+        },
+        {
+            "schema_id":"",
+            "tap_id":"[Util.get_guid('VARIABLE_ID2')]",
+            "type":"datatype.string",
+            "ref_type":"variable",
+            "title":"Temp Var1",
+            "properties": {
+                "scope": "local",
+                "is_required": false,
+                "name": "test",
+                "description": "test",
+                "value": "1"
+            }
+        }
+    ],
+    "action": [
+        {
+            "cases": [
+                {
+                    "name": "runtime_user",
+                    "case": [
+                        {
+                            "test": "['@Configuration.RuntimeUserObject.HardcodedValue.Id.#'!='00000000-0000-0000-0000-000000000000']",
+                            "payload": {
+                                "override_target_runtime_user": true,
+                                "runtime_user_id": "[Util.build_ref('@Configuration.RuntimeUserObject.HardcodedValue.Id.#')]"
+                            }
+                        },
+                        {
+                            "test": "['@Configuration.RuntimeUserObject.HardcodedValue.Id.#'=='00000000-0000-0000-0000-000000000000']",
+                            "payload": {
+                                "override_target_runtime_user": false,
+                                "target_default": true
+                            }
+                        }
+                    ]
+                }
+            ],
+            "payload": {
+                "previous_action": {
+                    "id": "[Util.build_ref(Util.prev_tap_id,'id')]",
+                    "tap_id": "[Util.prev_tap_id]",
+                    "schema_id": "",
+                    "type": "[Util.prev_type]",
+                    "base_type": "[Util.prev_base_type]"
+                },
+                "action": {
+                    "id": "",
+                    "tap_id": "[Util.get_guid('WEBREQUEST')]",
+                    "ref_type": "action",
+                    "schema_id": "",
+                    "type": "[Util.store_var('WEBREQUEST_TYPE','web-service.http_request')]",
+                    "base_type": "[Util.store_var('WEBREQUEST_BASETYPE','activity')]",
+                    "name": "@DisplayName.#",
+                    "properties": {
+                        "accept": "application/json",
+                        "action_timeout": 180,
+                        "allow_auto_redirect": true,
+                        "body": "{\"data\":1}{j}",
+                        "content_type": "application/json",
+                        "continue_on_error_status_code": false,
+                        "continue_on_failure": false,
+                        "display_name": "HTTP Request",
+                        "method": "CONNECT",
+                        "relative_url": "test",
+                        "skip_execution": false,
+                        "runtime_user": "%runtime_user%",
+                        "target": {
+                            "override_workflow_target": true,
+                            "override_workflow_target_group_criteria": false,
+                            "target_id": "[Util.build_ref('@Configuration.TargetLoadBalancer.SingleTargetReference.HardcodedValue.Id.#')]",
+                            "use_workflow_target_group": false
+                        }
+                    },
+                    "title": "HTTP Request"
+                }
+            }
+        },
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.get_guid('WEBREQUEST'))]",
+                "tap_id": "[Util.get_guid('WEBREQUEST')]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "id": "",
+                "tap_id": "[Util.get_guid('SPLITSTRING')]",
+                "ref_type": "action",
+                "schema_id": "",
+                "type": "[Util.store_var('SPLITSTRING_TYPE','core.splitstring')]",
+                "base_type": "[Util.store_var('SPLITSTRING_BASETYPE','activity')]",
+                "name": "@DisplayName.#",
+                "properties": {
+                    "boundaries": [
+                        {
+                            "boundary": ","
+                        }
+                    ],
+                    "continue_on_failure": false,
+                    "display_name": "Split String",
+                    "input_string": "$activity.[Util.build_ref(Util.get_guid('WEBREQUEST'),'id')]$.output.response_body$",
+                    "skip_execution": false,
+                    "description": "vvvv"
+                },
+                "title": "Test Split String"
+            }
+        },
+        {
+            "previous_action": {
+                "id": "[Util.build_ref(Util.get_guid('SPLITSTRING'))]",
+                "tap_id": "[Util.get_guid('SPLITSTRING')]",
+                "schema_id": "",
+                "type": "[Util.prev_type]",
+                "base_type": "[Util.prev_base_type]"
+            },
+            "action": {
+                "id": "",
+                "tap_id": "[Util.get_guid('SETVARIABLE')]",
+                "ref_type": "action",
+                "schema_id": "",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "name": "Set the Variable",
+                "properties": {
+                    "continue_on_failure": false,
+                    "skip_execution": false,
+                    "display_name": "Set the Variable",
+                    "variables_to_update":[ 
+                        { 
+                           "variable_to_update":"[Util.build_ref(Util.get_guid('VARIABLE_ID1'),'varref')]",
+                           "variable_value_new":"$activity.[Util.build_ref(Util.get_guid('WEBREQUEST'),'id')]$.output.response_body$"
+                        }
+                     ]
+                },
+                "title": "@DisplayName.#"
+            }
+        }
+    ]
+}

@@ -4,7 +4,7 @@
     "maximum":0,
     "minimum":0,
     "type":"[Util.get_datatype('@DataType.#')]",
-    "name":"@Name.#",
+    "name":"[Util.clean('@Name.#',' ')]",
     "title":"@Name.#"
 }
    
