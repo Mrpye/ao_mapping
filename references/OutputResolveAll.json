@@ -528,13 +528,7 @@
        "XstartTime":"output.start_time",
        "Xsucceeded":"output.succeeded"
     },
-    "core.escape_regex":{
-       "XelapsedTime":"output.elapsed_time",
-       "EndTime":"output.end_time",
-       "Escaped":"output.escaped",
-       "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
-    },
+   
     "core.find_string":{
        "XelapsedTime":"output.elapsed_time",
        "EndTime":"output.end_time",
@@ -568,8 +562,17 @@
        "MatchingStrings.FirstRow.Value":"output.matching_strings[0]",
        "MatchingStrings.LastRow.Value":"output.matching_strings[-1]",
        "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
+       "Xsucceeded":"output.succeeded",
+       "FirstMatch":"output.matching_strings[0]",
+       "AllMatchesTable.TIARows":"output.matching_strings"
     },
+    "core.escape_regex":{
+      "XelapsedTime":"output.elapsed_time",
+      "EndTime":"output.end_time",
+      "Escaped":"output.escaped",
+      "XstartTime":"output.start_time",
+      "Xsucceeded":"output.succeeded"
+   },
     "core.parse_date":{
        "XelapsedTime":"output.elapsed_time",
        "EndTime":"output.end_time",
@@ -1306,7 +1309,8 @@
        "EndTime":"output.end_time",
        "ResponseBody":"output.response_body",
        "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
+       "Xsucceeded":"output.succeeded",
+       "Output":"output.response_body"
     },
     "terminal.read_file":{
        "Content":"output.content",
@@ -1315,21 +1319,24 @@
        "Filename":"output.filename",
        "Filepath":"output.filepath",
        "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
+       "Xsucceeded":"output.succeeded",
+       "Output":"output.response_body"
     },
     "terminal.ssh_command":{
        "XelapsedTime":"output.elapsed_time",
        "EndTime":"output.end_time",
        "ResponseBody":"output.response_body",
        "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
+       "Xsucceeded":"output.succeeded",
+       "Output":"output.response_body"
     },
     "terminal.ssh_script":{
        "XelapsedTime":"output.elapsed_time",
        "EndTime":"output.end_time",
        "ResponseBody":"output.response_body",
        "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
+       "Xsucceeded":"output.succeeded",
+       "Output":"output.response_body"
     },
     "terminal.write_file":{
        "XelapsedTime":"output.elapsed_time",
@@ -1442,14 +1449,16 @@
        "EndTime":"output.end_time",
        "Result":"output.result",
        "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
+       "Xsucceeded":"output.succeeded",
+       "Output":"output.response_body"
     },
     "windows.execute_windows_script":{
        "XelapsedTime":"output.elapsed_time",
        "EndTime":"output.end_time",
        "Result":"output.result",
        "XstartTime":"output.start_time",
-       "Xsucceeded":"output.succeeded"
+       "Xsucceeded":"output.succeeded",
+       "Output":"output.response_body"
     },
     "windows.get_folder_properties":{
        "Attributes":"output.attributes",

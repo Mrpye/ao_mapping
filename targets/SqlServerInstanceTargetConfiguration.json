@@ -1,0 +1,18 @@
+{
+  "name": "@DisplayName.#",
+  "title": "@DisplayName.#",
+  "type": "corejava.jdbc_endpoint",
+  "tap_id": "@Id.#",
+  "id": "",
+  "ref_type": "target",
+  "schema_id": "",
+  "properties": {
+    "display_name": "@DisplayName.#",
+    "description": "@DisplayName.#",
+    "default_runtime_user_id":  "[Util.build_ref('@DefaultRuntimeUserId.#')]{!}",
+    "dbtype": "sqlserver",
+    "server": "@ServerName.#",
+    "port": 1433,
+    "database": "@DatabaseName.#"
+  }
+}

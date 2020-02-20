@@ -46,12 +46,15 @@
             color: white;
             background-color: #0494c8 !important;
         }
-
+        .Section {
+            color: white;
+            background-color: #c86604 !important;
+        }
     </style>
 </head>
 
 <body>
-    <h1>CPO to AO Conversion Report</h1>
+    <h1>CPO to AO Conversion Report {title}</h1>
     <table id="customers">
         <tr>
             <th>Scope</th>
@@ -61,6 +64,7 @@
             <th>id</th>
             <th>tap_id</th>
             <th>error_msg</th>
+            <th>payload</th>
         </tr>
         {content}
     </table>

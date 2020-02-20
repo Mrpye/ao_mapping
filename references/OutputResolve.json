@@ -29,7 +29,7 @@
    },
    "corejava.jsonpathquery": {
       "Results.?": "output.jsonpath_queries.?",
-      "InstanceFailed":"!output.succeeded"
+      "InstanceFailed": "!output.succeeded"
    },
    "core.format_date": {
       "XelapsedTime": "output.elapsed_time",
@@ -67,6 +67,34 @@
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded"
+   },
+   "snmp.get_request": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
+      "Variables.FirstRow.Value": "output.get_request_details[0].Value",
+      "Variables.LastRow.Value": "output.get_request_details[-1].Value",
+      "Variables.FirstRow.?": "output.get_request_details[0].?",
+      "Variables.LastRow.?": "output.get_request_details[-1].?"
+   },
+   "snmp.set_request": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded"
+   },
+   "snmp.send_trap": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
+      "ResolvedDefinition.": "TrapOID",
+      "Variables.FirstRow.?": "output.get_request_details[0].?",
+      "Variables.LastRow.?": "output.get_request_details[-1].?"
    },
    "amqp.declare_exchange": {
       "XelapsedTime": "output.elapsed_time",
@@ -584,7 +612,7 @@
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded",
-      "ResultTable.RowCount":"output.row_count"
+      "ResultTable.RowCount": "output.row_count"
    },
    "core.calculate_date": {
       "XelapsedTime": "output.elapsed_time",
@@ -601,15 +629,89 @@
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded",
-      "ResultTable.RowCount":"output.row_count"
+      "ResultTable.RowCount": "output.row_count"
    },
-   "--core.escape_regex": {
+   "core.matchregex": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "HasMatch": "output.has_match",
+      "MatchGroups": "output.match_groups",
+      "InstanceFailed": "!output.succeeded",
+      "MatchingStrings.FirstRow.Value": "output.matching_strings[0]",
+      "MatchingStrings.LastRow.Value": "output.matching_strings[-1]",
+      "AllMatchesTable.TIAColumns.Value.Name": "output.match_groups",
+      "AllMatchesTable.FirstRow.Value": "output.matching_strings[0]",
+      "AllMatchesTable.LastRow.Value": "output.matching_strings[-1]",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "FirstMatch": "output.matching_strings[0]",
+      "AllMatchesTable.TIARows": "output.matching_strings"
+     
+   },
+   "core.escape_regex": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "Escaped": "output.escaped",
       "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "windows.execute_powershell_script": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Result": "output.result",
+      "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "!output.succeeded"
+      "Output": "output.response_body"
+   },
+   "terminal.command": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Output": "output.response_body"
+   },
+   "terminal.read_file": {
+      "Content": "output.content",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Filename": "output.filename",
+      "Filepath": "output.filepath",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Output": "output.response_body"
+   },
+   "terminal.ssh_command": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Output": "output.response_body"
+   },
+   "terminal.ssh_script": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "ResponseBody": "output.response_body",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Output": "output.response_body"
+   },
+   "terminal.write_file": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Filename": "output.filename",
+      "Filepath": "output.filepath",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded"
+   },
+   "windows.execute_windows_script": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "Result": "output.result",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "Output": "output.response_body"
    },
    "core.find_string": {
       "XelapsedTime": "output.elapsed_time",
@@ -627,17 +729,6 @@
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
       "Output": "output.output_xml",
-      "XstartTime": "output.start_time",
-      "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "!output.succeeded"
-   },
-   "core.matchregex": {
-      "XelapsedTime": "output.elapsed_time",
-      "EndTime": "output.end_time",
-      "MatchCount": "output.has_match",
-      "AllMatchesTable.TIAColumns.Value.Name": "output.match_groups",
-      "AllMatchesTable.FirstRow.Value": "output.matching_strings[0]",
-      "AllMatchesTable.LastRow.Value": "output.matching_strings[-1]",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded"
@@ -661,7 +752,7 @@
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded",
-      "ResultTable.RowCount":"output.row_count"
+      "ResultTable.RowCount": "output.row_count"
    },
    "core.replacestring": {
       "XelapsedTime": "output.elapsed_time",
@@ -681,7 +772,7 @@
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded",
-      "ResultTable.RowCount":"output.row_count"
+      "ResultTable.RowCount": "output.row_count"
    },
    "core.set_multiple_variables": {
       "XelapsedTime": "output.elapsed_time",
@@ -736,7 +827,7 @@
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded",
-      "ResultTable.RowCount":"output.row_count"
+      "ResultTable.RowCount": "output.row_count"
    },
    "core.xml2json": {
       "XelapsedTime": "output.elapsed_time",
@@ -783,6 +874,18 @@
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded"
    },
+   "corejava.select_from_via_jdbc": {
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
+      "ResultTable.FirstRow.EntryType.?": "output.response_body[0].?",
+      "ResultTable.LastRow.EntryType.?": "output.response_body[-1].?",
+      "ResultTable.RowCount": "output.row_count",
+      "ResultTable.FirstRow.?": "output.response_body[0].?",
+      "ResultTable.LastRow.?": "output.response_body[-1].?"
+   },
    "logic.continue": {
       "XelapsedTime": "output.elapsed_time",
       "EndTime": "output.end_time",
@@ -790,8 +893,8 @@
       "Xsucceeded": "output.succeeded",
       "InstanceFailed": "!output.succeeded"
    },
-   "corejava.read_table_from_xml":{
-      "ResultTable.TIARows":"output.read_table_from_xml"
+   "corejava.read_table_from_xml": {
+      "ResultTable.TIARows": "output.read_table_from_xml"
    },
    "logic.for_each": {
       "XelapsedTime": "output.elapsed_time",
@@ -861,8 +964,6 @@
       "InstanceFailed": "!output.succeeded"
    },
    "windows.correlate_windows_events": {
-      "XelapsedTime": "output.elapsed_time",
-      "EndTime": "output.end_time",
       "ResponseBody.FirstRow.EntryType": "output.response_body[0].EntryType",
       "ResponseBody.LastRow.EntryType": "output.response_body[-1].EntryType",
       "ResponseBody.FirstRow.InstanceId": "output.response_body[0].InstanceId",
@@ -875,7 +976,9 @@
       "ResponseBody.LastRow.TimeGenerated": "output.response_body[-1].TimeGenerated",
       "XstartTime": "output.start_time",
       "Xsucceeded": "output.succeeded",
-      "InstanceFailed": "!output.succeeded"
+      "InstanceFailed": "!output.succeeded",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time"
    },
    "amqp.event": {
       "ContentHeaders.AppId": "output.app_id",
@@ -1130,16 +1233,35 @@
       "Port": "input.port",
       "Protocol": "input.protocol"
    },
-   "NSLookup.workflow.sub_workflow":{
-      "468f501b-aede-4ff6-99c7-b6b95608dbfd": "$var_generic_varref_NSLookup.output.Output$"
+   "workflow.sub_workflow":{
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded"
    },
-   "GenericActivity.workflow.sub_workflow":{
-      "Hosts.FirstRow.?": "$var_generic_varref_GenericActivity.output.OutputNameList$[0].?"
+   "NSLookup.workflow.sub_workflow": {
+      "468f501b-aede-4ff6-99c7-b6b95608dbfd": "$var_generic_varref_NSLookup.output.Output$",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time"
    },
-   "CPO AO Child Workflow_v2.workflow.sub_workflow":{
-      "d631d14f-0953-44a5-8a21-8e37f2feb0eb": "$var_generic_varref_CPO AO Child Workflow_v2.output.output$"
+   "GenericActivity.workflow.sub_workflow": {
+      "Hosts.FirstRow.?": "$var_generic_varref_GenericActivity.output.OutputNameList$[0].?",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time"
+   },
+   "CPO AO Child Workflow_v2.workflow.sub_workflow": {
+      "d631d14f-0953-44a5-8a21-8e37f2feb0eb": "$var_generic_varref_CPO AO Child Workflow_v2.output.output$",
+      "XstartTime": "output.start_time",
+      "Xsucceeded": "output.succeeded",
+      "InstanceFailed": "!output.succeeded",
+      "XelapsedTime": "output.elapsed_time",
+      "EndTime": "output.end_time"
    }
-
-
-   
 }
